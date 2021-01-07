@@ -4,43 +4,48 @@
   <meta charset="utf-8">
   <title>Кэт энерджи</title>
 </head>
-<body class="page__body">
-<header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img src="img/index/logo-mobile.svg" width="34" height="38" alt="Кэт Энерджи">
-    <img src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
-  </a>
-  <nav class="page-header__nav main-nav">
-    <button class="main-nav__toggle">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item--active">
-        <a href="index.html">Главная</a>
-      </li>
-      <li class="site-list__item">
-        <a href="catalog.html">Каталог продукции</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Подбор программы</a>
-      </li>
-    </ul>
+<body>
+<header>
+  <nav class="header-nav">
+    <a href="#">
+      <img src="img/index/logo-mobile.svg" width="34" height="38" alt="Кэт Энерджи">
+    </a>
+    <a href="index.html">
+      <img src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
+    </a>
+    <section class="main-nav">
+      <button class="main-nav__toggle">
+        <span class="visually-hidden">Переключение</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="#">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </section>
   </nav>
 </header>
-<main class="page-main">
+<main>
   <h1 class="visually-hidden">Интернет-магазин функционального питание для котов Кэт Энерджи</h1>
-  <section class="page-main__promo promo">
+  <section class="promo">
     <h2 class="promo__title">Функциональное питание для котов</h2>
     <p class="promo__slogan">Занялся собой? Займись котом!</p>
+    <img src="https://via.placeholder.com/150x150">
     <a class="promo__button button" href="form.html">Подобрать программу</a>
   </section>
-  <section class="page-main__programs programs">
+  <section class="programs">
     <h2 class="visually-hidden">Наши программы</h2>
-    <ul class="programs__list site-list">
-      <li class="site-list__item">
-        <article class="program program__slim">
+    <ul>
+      <li>
+        <article class="program">
           <h3 class="program__title program__title--slim">Похудение</h3>
-          <p class="program__paragraph">
+          <p class="program__description">
             Ваш кот весит больше собаки и
             почти утратил способность лазить
             по деревьям? Пора на диету! Cat
@@ -50,10 +55,10 @@
           <a class="program__link" href="catalog.html">Каталог Slim</a>
         </article>
       </li>
-      <li class="site-list__item">
-        <article class="program program__slim">
+      <li>
+        <article class="program">
           <h3 class="program__title program__title--pro">Набор массы</h3>
-          <p class="program__paragraph">
+          <p class="program__description">
             Заработать авторитет среди
             дворовых котов и даже собак?
             Серия Cat Energy Pro поможет
@@ -68,29 +73,29 @@
   <section class="steps">
     <h2 class="steps__title">Как это работает</h2>
     <ol class="steps__list">
-      <li class="step-list__item step">
-        <p class="step__paragraph">
+      <li class="steps-list__item step-one">
+        <p>
           Функциональное питание
           содержит только полезные
           питательные вещества.
         </p>
       </li>
-      <li class="step-list__item step">
-        <p class="step__paragraph">
+      <li class="step-list__item step-two">
+        <p>
           Выпускается в виде порошка,
           который нужно лишь залить
           кипятком и готово.
         </p>
       </li>
-      <li class="step-list__item step">
-        <p class="step__paragraph">
+      <li class="step-list__item step-three">
+        <p>
           Замените один-два приема
           обычной еды на наше
           функциональное питание.
         </p>
       </li>
-      <li class="step-list__item step">
-        <p class="step__paragraph">
+      <li class="step-list__item step-four">
+        <p>
           Уже через месяц
           наслаждайтесь изменениями
           к лучшему вашего питомца!
@@ -99,28 +104,38 @@
     </ol>
   </section>
 </main>
-<footer class="page-footer">
-  <a class="page-footer__logo" href="index.html">
-    <img src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
-  </a>
-  <section class="page-footer__social social-media">
-    <h2 class="visually-hidden">Социальные сети</h2>
-    <ul class="social-media__list social-list">
-      <li class="social-list__item">
-        <a href="#">VK</a>
-      </li>
-      <li class="social-list__item">
-        <a href="#">Instagram</a>
-      </li>
-      <li class="social-list__item">
-        <a href="#">FaceBook</a>
-      </li>
-    </ul>
+<footer>
+  <section class="footer-nav">
+    <a class="footer-nav__logo" href="index.html">
+      <img src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
+    </a>
+    <section class="footer-nav__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li>
+          <a href="#">
+            <img src="img/icon_vkontakte.svg" width="23" height="16" alt="Вконтакте">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_instagram.svg" width="16" height="16" alt="Instagram">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_facebook.svg" width="22" height="22" alt="FaceBook">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-nav__development">
+      <h2 class="footer-nav__development__title">HTML Academy</h2>
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/htmlacademy.svg" width="16" height="16" alt="HTML Academy">
+      </a>
+    </section>
   </section>
-  <a class="page-footer__development" href="https://htmlacademy.ru/intensive/adaptive">
-    <h2 class="page-footer__development__title">HTML Academy</h2>
-    <img src="img/htmlacademy.svg" width="16" height="16" alt="HTML Academy">
-  </a>
 </footer>
 </body>
 </html>
