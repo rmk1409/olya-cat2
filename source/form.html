@@ -38,7 +38,7 @@
     программу питания для вашего кота
   </p>
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
-    <fieldset>
+    <fieldset class="form__fieldset">
       <label class="form__element">
         Имя:*
         <input type="text" name="name" placeholder="Барсик" minlength="1">
@@ -46,48 +46,48 @@
       <label class="form__element">
         Вес (кг):*
         <input type="number" name="weight" placeholder="7" minlength="1">
-      </label class="form__element">
-      <label>
+      </label>
+      <label class="form__element">
         Возраст (лет):*
         <input type="number" name="age" placeholder="7" minlength="1">
       </label>
     </fieldset>
-    <fieldset>
+    <fieldset class="form__fieldset">
       <ul>
         <li>
           <label class="form__element">
-            <input type="radio" name="loss" value="Weight loss" checked>
+            <input type="radio" name="program" value="Weight loss" checked>
             Похудение
           </label>
         </li>
         <li>
           <label class="form__element">
-            <input type="radio" name="gain" value="Weight gain">
+            <input type="radio" name="program" value="Weight gain">
             Набор массы
           </label>
         </li>
         <li>
           <label class="form__element">
-            <input type="radio" name="don't know" value="Don't know">
+            <input type="radio" name="program" value="Don't know">
             Не знаю (Нужен ваш совет)
           </label>
         </li>
       </ul>
     </fieldset>
     <fieldset>
-      <legend class="form__legend">Контактные данные</legend>
+      <legend class="form__legend">Контактные данные (владельца кота)</legend>
       <label class="form__element">
         E-mail:*
-        <input type="email" name="email" placeholder="kuklachev@gmail.com">
+        <input class="form__element--email" type="email" name="email" placeholder="kuklachev@gmail.com">
       </label>
       <label class="form__element">
         Телефон:*
-        <input type="number" name="number" placeholder="8 (960) 900-60-90">
+        <input class="form__element--phone" type="number" name="number" placeholder="8 (960) 900-60-90">
       </label>
     </fieldset>
     <fieldset>
       <legend class="form__legend">Комментарий</legend>
-      <label class="form__element" for="write-to-us">Напишите комментарий</label>
+      <label class="visually-hidden" for="write-to-us">Напишите комментарий</label>
       <textarea id="write-to-us" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
     <fieldset>
@@ -119,15 +119,15 @@
         </li>
       </ul>
     </fieldset>
-    <button class="button" type="submit" aria-label="Кнопка отправить заявку">Отправить заявку</button>
+    <button class="button" type="submit">Отправить заявку</button>
     <span class="form__description">* — Обязательные поля</span>
   </form>
 </main>
 <footer>
   <section class="footer-address">
     <div class="footer-address__wrapper">
-      <h2>Приглашаем к сотрудничеству дилеров!</h2>
-      <p>
+      <h2 class="footer-address__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="footer-address__description">
         ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург
@@ -135,7 +135,7 @@
     </div>
     <img src="img/map.png" width="320" height="362"
          alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-    <img src="img/map-pin.png" width="57" height="53" alt="Маркер">
+    <img class="map-pin" src="img/map-pin.png" width="57" height="53" alt="Маркер">
   </section>
   <section class="footer-nav">
     <a class="footer-nav__logo" href="#">
