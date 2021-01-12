@@ -1,1 +1,8 @@
-body { background: red; }
+@import "common";
+@import "color";
+@import "blok/header-nav";
+@import "blok/promo";
+@import "blok/program";
+@import "blok/result";
+@import "blok/footer-nav";
+@import "blok/card";
