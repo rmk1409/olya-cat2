@@ -10,3 +10,39 @@
   overflow: hidden;
   border: 0
 }
+
+body {
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button {
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $green;
+}
+
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: none;
+}
