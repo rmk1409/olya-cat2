@@ -1,0 +1,18 @@
+.program {
+  background-color: $gray;
+}
+
+.program__title {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.program__description {
+  font-family: "Arial", "Roboto", sans-serif;
+  line-height: 18px;
+  text-transform: none;
+}
+
+.program__link {
+  font-size: 16px;
+}

@@ -1,17 +1,19 @@
-.card {
-  background-color: $basic-gray;
-}
 
 .cars__title {
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
 }
 
 .card__info {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Roboto", sans-serif;
   font-size: 12px;
   line-height: 16px;
   text-transform: none;
+}
+
+.card__img {
+  width: 140px;
+  height: 112px;
+  background-color: $basic-gray;
 }

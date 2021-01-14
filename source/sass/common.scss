@@ -33,14 +33,15 @@ a {
 .button {
   font-family: "Oswald", "Roboto", sans-serif;
   font-weight: normal;
-  font-style: normal;
   color: $white;
+  font-size: 16px;
   text-transform: uppercase;
   background-color: $green;
+  outline: none;
+  border: none;
 }
 
 .title {
-  font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
