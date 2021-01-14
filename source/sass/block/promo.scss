@@ -1,10 +1,13 @@
 .promo {
+  margin: 0 auto;
   width: 320px;
-  height: 305px;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
   background-color: $green;
   color: $white;
   text-align: center;
+  outline: 3px solid red;
 }
 
 .promo__title {

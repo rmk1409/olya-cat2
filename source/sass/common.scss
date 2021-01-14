@@ -12,6 +12,7 @@
 }
 
 body {
+  margin: 0 auto;
   font-family: "Oswald", "Roboto", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -28,6 +29,12 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.container {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .button {

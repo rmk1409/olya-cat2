@@ -7,7 +7,7 @@
 </head>
 <body>
 <header>
-  <nav class="header-nav">
+  <nav class="header-nav container">
     <a href="index.html">
       <img src="img/index/logo-mobile.svg" width="34" height="38" alt="Кэт Энерджи">
     </a>
@@ -32,10 +32,10 @@
     </section>
   </nav>
 </header>
-<main>
+<main class="container">
   <h1 class="title">Каталог продукции</h1>
   <section class="catalog">
-    <ul class="reset-list">
+    <ul class="cards reset-list">
       <li>
         <article class="card">
           <a href="#">
@@ -274,7 +274,7 @@
   </section>
 </main>
 <footer>
-  <section class="footer-address">
+  <section class="footer-address container">
     <div class="footer-address__wrapper">
       <h2 class="footer-address__title">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="footer-address__description">
@@ -283,39 +283,42 @@
         Санкт-Петербург
       </p>
     </div>
-    <img src="img/map.png" width="320" height="362" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+    <img src="img/map.png" width="320" height="362"
+         alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
     <img class="map-pin" src="img/map-pin.png" width="57" height="53" alt="Маркер">
   </section>
   <section class="footer-nav">
-    <a class="footer-nav__logo" href="#">
-      <img src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
-    </a>
-    <section class="footer-nav__social social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social__list reset-list">
-        <li>
-          <a href="#">
-            <img src="img/icon_vkontakte.svg" width="23" height="16" alt="Вконтакте">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/icon_instagram.svg" width="16" height="16" alt="Instagram">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/icon_facebook.svg" width="22" height="22" alt="FaceBook">
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer-nav__development development">
-      <h2 class="development__title">HTML Academy</h2>
-      <a href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy.svg" width="16" height="16" alt="HTML Academy">
+    <div class="container">
+      <a class="footer-nav__logo" href="#">
+        <img src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
-    </section>
+      <section class="footer-nav__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list reset-list">
+          <li>
+            <a href="#">
+              <img src="img/icon_vkontakte.svg" width="23" height="16" alt="Вконтакте">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icon_instagram.svg" width="16" height="16" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icon_facebook.svg" width="22" height="22" alt="FaceBook">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-nav__development development">
+        <h2 class="development__title">HTML Academy</h2>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" width="16" height="16" alt="HTML Academy">
+        </a>
+      </section>
+    </div>
   </section>
 </footer>
 </body>
