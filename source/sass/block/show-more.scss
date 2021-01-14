@@ -3,7 +3,9 @@
 }
 
 .show-more__title {
+  padding-top: 89px;
   font-size: 16px;
+  text-align: center;
 }
 
 .show-more__description {
@@ -13,6 +15,7 @@
 }
 
 .show-more__button {
+  margin-top: 21px;
   color: $black;
   background-color: $basic-gray;
 }

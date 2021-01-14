@@ -9,10 +9,10 @@
 <header>
   <nav class="header-nav container">
     <a href="#">
-      <img src="img/index/logo-mobile.svg" width="34" height="38" alt="Кэт Энерджи">
+      <img class="header-nav__logo" src="img/index/logo-mobile.svg" width="34" height="38" alt="Кэт Энерджи">
     </a>
     <a href="#">
-      <img src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
+      <img class="header-nav__logo--text" src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
     </a>
     <section class="main-nav">
       <button class="main-nav__toggle">
@@ -34,20 +34,18 @@
 </header>
 <main>
   <h1 class="visually-hidden">Интернет-магазин функционального питание для котов Кэт Энерджи</h1>
-  <section class="promo">
-    <div class="container">
-      <h2 class="promo__title">Функциональное питание для котов</h2>
-      <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Пример продукта Кэт Энерджт">
-      <a class="button" href="form.html">Подобрать программу</a>
-    </div>
+  <section class="promo container">
+    <h2 class="promo__title">Функциональное питание для котов</h2>
+    <p class="promo__slogan">Занялся собой? Займись котом!</p>
+    <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Пример продукта Кэт Энерджт">
+    <a class="button" href="form.html">Подобрать программу</a>
   </section>
-  <section class="programs">
+  <section class="programs container">
     <h2 class="visually-hidden">Наши программы</h2>
     <ul class="reset-list">
       <li>
         <article class="program">
-          <div class="container">
+          <div>
             <h3 class="program__title program__title--slim">Похудение</h3>
             <p class="program__description">
               Ваш кот весит больше собаки и
@@ -62,7 +60,7 @@
       </li>
       <li>
         <article class="program">
-          <div class="container">
+          <div>
             <h3 class="program__title program__title--pro">Набор массы</h3>
             <p class="program__description">
               Заработать авторитет среди
@@ -152,8 +150,8 @@
   </section>
 </main>
 <footer>
-  <section class="footer-address container">
-    <div class="footer-address__wrapper">
+  <section class="footer-address">
+    <div class="container">
       <h2 class="footer-address__title">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="footer-address__description">
         ул. Большая
@@ -161,14 +159,14 @@
         Санкт-Петербург
       </p>
     </div>
-    <img src="img/map.png" width="320" height="362"
+    <img class="footer-address__map" src="img/map.png" width="320" height="362"
          alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
     <img class="map-pin" src="img/map-pin.png" width="57" height="53" alt="Маркер">
   </section>
-  <section class="footer-nav">
-    <div class="container">
-      <a class="footer-nav__logo" href="#">
-        <img src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
+  <section class="footer-nav container">
+    <div>
+      <a href="#">
+        <img class="footer-nav__logo" src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
       <section class="footer-nav__social social">
         <h2 class="visually-hidden">Социальные сети</h2>

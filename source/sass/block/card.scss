@@ -1,3 +1,6 @@
+.card{
+  outline: 4px solid green;
+}
 
 .cars__title {
   font-weight: normal;
@@ -16,4 +19,13 @@
   width: 140px;
   height: 112px;
   background-color: $basic-gray;
+}
+
+.card__button {
+  margin-top: 13px;
+  width: 281px;
+}
+
+.card__grid {
+  outline: 3px solid darkblue;
 }

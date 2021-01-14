@@ -38,12 +38,16 @@ a {
 }
 
 .button {
+  display: block;
+  width: 240px;
+  padding: 10px 20px;
   font-family: "Oswald", "Roboto", sans-serif;
   font-weight: normal;
-  color: $white;
+  text-align: center;
+  color: #FFFFFF;
   font-size: 16px;
   text-transform: uppercase;
-  background-color: $green;
+  background-color: #68B738;
   outline: none;
   border: none;
 }
