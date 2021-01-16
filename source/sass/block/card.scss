@@ -1,5 +1,7 @@
-.card{
-  outline: 4px solid green;
+.card {
+  margin-top: 21px;
+  outline: 2px solid green;
+  outline-offset: -1px;
 }
 
 .cars__title {
@@ -27,5 +29,7 @@
 }
 
 .card__grid {
+  margin-left: 11px;
   outline: 3px solid darkblue;
+  outline-offset: -11px;
 }

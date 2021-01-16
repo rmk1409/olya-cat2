@@ -1,4 +1,6 @@
 .promo {
+  padding-top: 31px;
+  padding-bottom: 19px;
   width: 320px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -9,7 +11,7 @@
 }
 
 .promo__title {
-  padding-top: 24px;
+  margin: 0;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;

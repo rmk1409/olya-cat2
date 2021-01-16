@@ -1,17 +1,7 @@
 .main-nav {
+  margin-top: 16px;
   font-weight: 500;
   font-size: 20px;
-}
-
-.main-nav__toggle {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  border: 0;
-  background-color: transparent;
-  background-image: url("../img/cross.svg");
-}
-
-.main-nav__list {
   outline: 3px solid rebeccapurple;
+  outline-offset: -8px;
 }
