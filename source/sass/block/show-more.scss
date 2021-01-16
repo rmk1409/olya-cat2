@@ -1,0 +1,22 @@
+.show-more {
+  outline: 3px solid red;
+}
+
+.show-more__title {
+  padding-top: 89px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.show-more__description {
+  font-family: "Arial", "Roboto", sans-serif;
+  line-height: 12px;
+  text-transform: none;
+  text-align: center;
+}
+
+.show-more__button {
+  margin-top: 21px;
+  color: $black;
+  background-color: $basic-gray;
+}

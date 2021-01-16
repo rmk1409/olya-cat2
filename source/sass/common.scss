@@ -1,0 +1,61 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  border: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  display: block;
+  width: 240px;
+  padding: 10px 20px;
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: $green;
+  outline: none;
+  border: none;
+}
+
+.title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: none;
+}

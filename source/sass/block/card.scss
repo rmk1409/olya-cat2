@@ -1,0 +1,35 @@
+.card {
+  margin-top: 21px;
+  outline: 2px solid green;
+  outline-offset: -1px;
+}
+
+.cars__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__info {
+  font-family: "Arial", "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+}
+
+.card__img {
+  width: 140px;
+  height: 112px;
+  background-color: $basic-gray;
+}
+
+.card__button {
+  margin-top: 13px;
+  width: 281px;
+}
+
+.card__grid {
+  margin-left: 11px;
+  outline: 3px solid darkblue;
+  outline-offset: -11px;
+}

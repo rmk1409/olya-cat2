@@ -1,0 +1,24 @@
+.program {
+  margin-top: 16px;
+  padding: 18px 10px;
+  background-color: $gray;
+}
+
+.program__title {
+  margin: 0;
+  padding-left: 91px;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.program__description {
+  margin-top: 29px;
+  font-family: "Arial", "Roboto", sans-serif;
+  line-height: 18px;
+  text-transform: none;
+}
+
+.program__link {
+  margin-top: 38px;
+  font-size: 16px;
+}
