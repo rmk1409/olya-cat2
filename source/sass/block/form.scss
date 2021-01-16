@@ -1,0 +1,41 @@
+.form__fieldset {
+  margin-top: 10px;
+  padding: 20px 0;
+  outline: 3px solid darkgoldenrod;
+  outline-offset: 2px;
+}
+
+[placeholder],
+.form__element,
+.form__fieldset {
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-gray;
+  text-transform: uppercase;
+}
+
+.form__element {
+  margin-top: 10px;
+}
+
+.form__legend {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.form__description {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Arial", "Roboto", sans-serif;
+  text-transform: none;
+}
+
+.form__button {
+  margin-top: 10px;
+  width: 279px;
+}
