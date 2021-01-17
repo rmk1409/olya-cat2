@@ -1,0 +1,32 @@
+.result {
+  padding: 24px 20px;
+  background-color: $gray;
+  outline: 3px solid firebrick;
+  outline-offset: 2px;
+}
+
+.result__stats {
+  outline: 3px solid darkgoldenrod;
+  outline-offset: 2px;
+}
+
+.result__img {
+  outline: 3px solid darkgoldenrod;
+  outline-offset: 2px;
+}
+
+.result__description {
+  font-family: "Arial", "Roboto", sans-serif;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.result__button {
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: normal;
+  color: $black;
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}

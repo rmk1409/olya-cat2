@@ -1,0 +1,21 @@
+.order-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 280px;
+  height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  outline: 3px solid darkgoldenrod;
+  outline-offset: 2px;
+}
+
+.order-all__description {
+  padding-top: 180px;
+  width: 160px;
+  font-family: "Arial", "Roboto", sans-serif;
+  text-transform: none;
+  color: $white;
+  text-align: center;
+}

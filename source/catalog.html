@@ -15,7 +15,7 @@
       <a href="#">
         <img class="header-nav__logo--text" src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
-      <button class="header-nav__toggle">
+      <button class="header-nav__toggle" type="button">
         <span class="visually-hidden">Переключение</span>
       </button>
     </section>
@@ -229,11 +229,9 @@
       </li>
     </ul>
     <section class="catalog__show-more show-more">
-      <a href="#">
-        <p class="show-more__title">Показать еще 100500 товаров</p>
-      </a>
+      <p class="show-more__title">Показать еще 100500 товаров</p>
       <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
-      <a class="show-more__button button" href="#">Показать все</a>
+      <button class="show-more__button button" type="button">Показать все</button>
     </section>
   </section>
   <section class="additional-goods">
@@ -247,7 +245,7 @@
             <td>200 Р.</td>
           </tr>
         </table>
-        <button class="button" type="button">Заказать</button>
+        <button class="button card__button" type="button">Заказать</button>
       </li>
       <li class="goods">
         <h3 class="goods__title">Питьевая вода</h3>
@@ -257,7 +255,7 @@
             <td>50 Р.</td>
           </tr>
         </table>
-        <button class="button" type="button">Заказать</button>
+        <button class="button card__button" type="button">Заказать</button>
       </li>
       <li class="goods">
         <h3 class="goods__title">Молоко</h3>
@@ -267,7 +265,7 @@
             <td>100 Р.</td>
           </tr>
         </table>
-        <button class="button" type="button">Заказать</button>
+        <button class="button card__button" type="button">Заказать</button>
       </li>
       <li class="goods">
         <h3 class="goods__title">Витамины</h3>
@@ -277,7 +275,7 @@
             <td>300 Р.</td>
           </tr>
         </table>
-        <button class="button" type="button">Заказать</button>
+        <button class="button card__button" type="button">Заказать</button>
       </li>
     </ul>
     <section class="order-all">
@@ -289,9 +287,9 @@
     </section>
   </section>
 </main>
-<footer>
-  <section class="footer-address">
-    <div class="container">
+<footer class="footer-page">
+  <section class="footer-section">
+    <div class="footer-address container">
       <h2 class="footer-address__title">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="footer-address__description">
         ул. Большая
@@ -299,8 +297,10 @@
         Санкт-Петербург
       </p>
     </div>
-    <img class="footer-address__map" src="img/map.png" width="320" height="362" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-    <img class="map-pin" src="img/map-pin.png" width="57" height="53" alt="Маркер">
+    <div class="footer-map">
+      <img class="footer-map__img" src="img/map.png" width="320" height="362" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="footer-map__pin" src="img/map-pin.png" width="57" height="53" alt="Маркер">
+    </div>
   </section>
   <section class="footer-nav container">
     <div>

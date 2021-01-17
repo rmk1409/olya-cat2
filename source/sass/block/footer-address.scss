@@ -1,0 +1,17 @@
+.footer-address {
+  padding: 10px 20px;
+  background-color: $white;
+  outline: 3px solid darkgoldenrod;
+  outline-offset: 2px;
+}
+
+.footer-address__title {
+  font-weight: normal;
+}
+
+.footer-address__description {
+  font-family: "Arial", "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: none;
+}

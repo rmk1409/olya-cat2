@@ -50,6 +50,7 @@ a {
   background-color: $green;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .title {
@@ -58,4 +59,10 @@ a {
   font-size: 36px;
   line-height: 40px;
   text-transform: none;
+}
+
+fieldset {
+  padding: 0;
+  outline: none;
+  border: none;
 }
