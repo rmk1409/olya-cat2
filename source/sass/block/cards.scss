@@ -1,4 +1,8 @@
 .cards {
-  outline: 3px solid red;
-  outline-offset: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 44px;
+  outline: 3px solid lawngreen;
+  outline-offset: 12px;
 }
