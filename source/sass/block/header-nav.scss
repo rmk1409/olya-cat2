@@ -20,6 +20,7 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header-nav__toggle,
   .header-nav__logo--text {
     display: none;
   }

@@ -5,8 +5,14 @@
   outline-offset: 2px;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .footer-section {
     max-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-section {
+    max-width: 1220px;
   }
 }
