@@ -5,3 +5,10 @@
   outline: 3px solid rebeccapurple;
   outline-offset: -8px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+  }
+}
+

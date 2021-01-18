@@ -13,3 +13,33 @@
   background-color: transparent;
   background-image: url("../img/cross.svg");
 }
+
+.header-nav__logo--tablet,
+.header-nav__logo--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header-nav__logo--text {
+    display: none;
+  }
+
+  .header-nav__logo--tablet {
+    display: block;
+  }
+
+  .header-nav__logo--text,
+  .header-nav__logo--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-nav__logo--desktop {
+    display: block;
+  }
+
+  .header-nav__logo--tablet {
+    display: none;
+  }
+}

@@ -1,4 +1,7 @@
 .footer-address {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
   padding: 10px 20px;
   background-color: $white;
   outline: 3px solid darkgoldenrod;

@@ -13,3 +13,10 @@
 .footer-nav__development {
   margin-top: 43px;
 }
+
+@media (min-width:$tablet-width) {
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}

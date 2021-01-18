@@ -10,3 +10,17 @@
   padding: 13px 20px;
   outline: 3px solid red;
 }
+
+@media (min-width: $tablet-width) {
+  .steps__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps__list {
+    display: flex;
+  }
+}
