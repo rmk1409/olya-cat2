@@ -22,7 +22,6 @@
   display: none;
 }
 
-
 @media (min-width: $tablet-width) {
   .promo {
     display: flex;
@@ -55,14 +54,13 @@
     display: block;
     order: 2;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .promo__img--tablet {
     display: none;
   }
+
   .promo__img--desktop {
     position: absolute;
     left: 582px;
@@ -70,6 +68,7 @@
     display: block;
     order: 2;
   }
+
   .promo {
     padding: 120px 110px;
     position: relative;
@@ -77,4 +76,3 @@
     flex-direction: column;
   }
 }
-

@@ -25,8 +25,9 @@
 }
 
 .card__button {
-  margin-top: 13px;
   margin: 0 auto;
+  margin-top: 13px;
+
   width: 281px;
 }
 
@@ -42,6 +43,7 @@
     text-align: center;
     background-color: $basic-gray;
   }
+
   .card__info {
     margin: 0 auto;
   }
@@ -49,7 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .card {
-   width: 234px;
+    width: 234px;
   }
 
   .card__button {

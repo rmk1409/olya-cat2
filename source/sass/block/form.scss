@@ -1,4 +1,7 @@
 .form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 10px;
   padding: 20px 0;
   outline: 3px solid darkgoldenrod;
@@ -27,6 +30,11 @@
   text-transform: none;
 }
 
+.form__button--grid {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__description {
   display: block;
   margin-top: 20px;
@@ -38,4 +46,27 @@
 .form__button {
   margin-top: 10px;
   width: 279px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__button--grid {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form__description {
+    margin-left: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-grid__contact {
+    display: flex;
+    justify-content: space-between;
+  }
 }

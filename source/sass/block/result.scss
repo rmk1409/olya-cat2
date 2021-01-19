@@ -1,11 +1,12 @@
 .result {
   padding: 24px 20px;
-  background-color: $gray;
   outline: 3px solid firebrick;
   outline-offset: 2px;
 }
 
 .result__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   outline: 3px solid darkgoldenrod;
   outline-offset: 2px;
 }
@@ -13,6 +14,7 @@
 .result__img {
   outline: 3px solid darkgoldenrod;
   outline-offset: 2px;
+  text-align: center;
 }
 
 .result__description {
@@ -29,4 +31,57 @@
   background-color: transparent;
   outline: none;
   border: none;
+}
+
+.stat {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stat-cost {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .result__stats {
+    grid-template-columns: 112px 140px 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .stat-cost {
+    grid-column-start: -1;
+    grid-column-end: -2;
+    text-align: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result__grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 436px 1fr;
+  }
+
+  .result__stats {
+    grid-template-columns: 1fr 1fr;
+    grid-row-start: 2;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .stat-cost {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+  }
+
+  .result__img {
+    grid-column-start: -1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }

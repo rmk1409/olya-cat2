@@ -1,3 +1,9 @@
 .footer-page {
   margin-top: 13px;
 }
+
+@media (min-width: $desktop-width) {
+  .footer-page {
+    position: relative;
+  }
+}
