@@ -26,6 +26,7 @@
 
 .card__button {
   margin-top: 13px;
+  margin: 0 auto;
   width: 281px;
 }
 
@@ -33,4 +34,25 @@
   padding: 10px;
   outline: 3px solid darkblue;
   outline-offset: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    width: 324px;
+    text-align: center;
+    background-color: $basic-gray;
+  }
+  .card__info {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+   width: 234px;
+  }
+
+  .card__button {
+    width: 168px;
+  }
 }

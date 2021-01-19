@@ -42,23 +42,6 @@ a {
   padding: 0 20px;
 }
 
-@media (min-width: $tablet-width) {
-  .container {
-    max-width: 709px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 110px;
-  }
-}
-
-
 .button {
   display: block;
   width: 240px;
@@ -87,4 +70,32 @@ fieldset {
   padding: 0;
   outline: none;
   border: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 709px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .button {
+    width: 192px;
+    padding: 10px 26px;
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
 }

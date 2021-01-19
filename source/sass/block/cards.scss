@@ -10,13 +10,16 @@
 @media (min-width: $tablet-width) {
   .cards {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cards {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 80px;
   }
 }

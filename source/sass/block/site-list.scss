@@ -2,3 +2,9 @@
   padding: 25px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    padding: 15px;
+  }
+}

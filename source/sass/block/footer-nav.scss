@@ -1,7 +1,6 @@
 .footer-nav {
   padding: 25px 22px;
   text-align: center;
-  background-color: $basic-gray;
   outline: 3px solid red;
 }
 
@@ -18,5 +17,14 @@
   .footer-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-nav__social {
+    margin-top: 0;
+  }
+
+  .footer-nav__development {
+    margin-top: 0;
   }
 }

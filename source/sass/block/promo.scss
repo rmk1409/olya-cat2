@@ -1,7 +1,6 @@
 .promo {
   padding-top: 31px;
   padding-bottom: 19px;
-  width: 320px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -15,12 +14,67 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
   text-transform: none;
 }
 
+.promo__img--desktop,
+.promo__img--tablet {
+  display: none;
+}
+
+
 @media (min-width: $tablet-width) {
   .promo {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
     color: $black;
+    background-image: none;
+  }
+
+  .promo__title {
+    width: 450px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .promo__button {
+    order: 1;
+  }
+
+  .promo__img--mobile {
+    display: none;
+  }
+
+  .promo__img--tablet {
+    display: block;
+    order: 2;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .promo__img--tablet {
+    display: none;
+  }
+  .promo__img--desktop {
+    position: absolute;
+    left: 582px;
+    top: 12px;
+    display: block;
+    order: 2;
+  }
+  .promo {
+    padding: 120px 110px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 }
+

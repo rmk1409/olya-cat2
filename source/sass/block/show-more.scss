@@ -1,4 +1,5 @@
 .show-more {
+  margin: 0 auto;
   outline: 3px solid red;
 }
 
@@ -16,8 +17,35 @@
 }
 
 .show-more__button {
-  margin-top: 21px;
+  margin: 21px auto 0;
   width: 280px;
   color: $black;
   background-color: $basic-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    padding: 20px 20px 19px 20px;
+  }
+
+  .show-more__button {
+    margin: 65px auto 0;
+  }
+
+  .show-more__title {
+    margin: 0 auto;
+    width: 137px;
+    padding-top: 69px;
+  }
+
+  .show-more__description {
+    width: 176px;
+    margin: 28px auto 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__button {
+    width: 168px;
+  }
 }
