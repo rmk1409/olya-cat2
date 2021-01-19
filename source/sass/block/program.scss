@@ -21,3 +21,40 @@
   margin-top: 38px;
   font-size: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding: 41px 52px;
+  }
+
+  .program__title {
+    padding-left: 0;
+    font-size: 36px;
+  }
+
+  .program__description {
+    width: 380px;
+    font-size: 16px;
+  }
+
+  .program__link {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .program__title {
+    padding-left: 103px;
+  }
+
+  .program__description {
+    width: 459px;
+    margin-top: 55px;
+  }
+
+  .program__link {
+    margin-top: 30px;
+  }
+}

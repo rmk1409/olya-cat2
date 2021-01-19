@@ -3,3 +3,12 @@
   flex-direction: column;
   gap: 20px;
 }
+
+
+@media (min-width: $desktop-width) {
+  .programs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}

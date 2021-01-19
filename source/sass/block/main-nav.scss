@@ -5,3 +5,21 @@
   outline: 3px solid rebeccapurple;
   outline-offset: -8px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav {
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    margin-top: 0;
+    font-size: 20px;
+  }
+}

@@ -10,3 +10,36 @@
   padding: 13px 20px;
   outline: 3px solid red;
 }
+
+@media (min-width: $tablet-width) {
+  .steps {
+    padding: 13px 30px;
+  }
+
+  .steps__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .step {
+    padding-left: 0;
+    padding-top: 100px;
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .steps {
+    margin-top: 20px;
+    padding: 63px 110px;
+    outline: 3px solid red;
+  }
+}
