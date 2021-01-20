@@ -10,6 +10,8 @@
 }
 
 .goods__info {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   font-family: "Arial", "Roboto", sans-serif;
   font-weight: normal;

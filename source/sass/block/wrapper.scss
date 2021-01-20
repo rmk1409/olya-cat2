@@ -1,3 +1,15 @@
 .wrapper {
   background-color: $basic-gray;
 }
+
+@media (min-width: $tablet-width) {
+  .wrapper-result {
+    background: linear-gradient(180deg, $white 20px 350px, $gray 350px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper-result {
+    background: linear-gradient(180deg, $white 20px 150px, $gray 150px);
+  }
+}
