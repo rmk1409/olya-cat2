@@ -1,3 +1,28 @@
 .footer-map {
   background-color: $gray;
 }
+
+.footer-map__img--tablet,
+.footer-map__img--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-map__img--mobile {
+    display: none;
+  }
+
+  .footer-map__img--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-map__img--tablet {
+    display: none;
+  }
+
+  .footer-map__img--desktop {
+    display: block;
+  }
+}

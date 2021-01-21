@@ -11,3 +11,11 @@
   line-height: 24px;
   text-transform: none;
 }
+
+@media (min-width: $desktop-width) {
+  .additional-goods__grid {
+    display: grid;
+    grid-template-columns: 894px 245px;
+    gap: 80px;
+  }
+}

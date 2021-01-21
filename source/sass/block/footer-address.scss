@@ -1,6 +1,7 @@
 .footer-address {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 24px;
   padding: 10px 20px;
   background-color: $white;
@@ -17,4 +18,24 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-address__title {
+    width: 200px;
+  }
+
+  .footer-address__description {
+    text-align: end;
+    width: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-address {
+    position: absolute;
+    top: 96px;
+    width: 399px;
+    padding: 20px 76px;
+  }
 }

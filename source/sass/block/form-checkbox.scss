@@ -1,0 +1,21 @@
+.form-checkbox__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-checkbox__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-checkbox__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

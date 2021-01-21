@@ -1,4 +1,7 @@
 .footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 25px 22px;
   text-align: center;
   outline: 3px solid red;
@@ -15,7 +18,7 @@
 
 @media (min-width: $tablet-width) {
   .footer-nav {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
