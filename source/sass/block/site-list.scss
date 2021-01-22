@@ -1,10 +1,28 @@
 .site-list__item {
-  padding: 25px;
+  padding-top: 17px;
+  padding-bottom: 18px;
   text-align: center;
+  border-top: 1px solid $dark-gray;
 }
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    padding: 15px;
+    margin-top: 4px;
+    margin-right: 0px;
+    margin-left: 36px;
+    padding-bottom: 6px;
+    border-top: none;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid $green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    padding-top: 13px;
+    padding-bottom: 5px;
+    margin-left: 34px;
   }
 }

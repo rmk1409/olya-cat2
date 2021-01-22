@@ -1,10 +1,9 @@
 .main-nav {
-  margin-top: 16px;
+  margin-top: 12px;
   font-weight: 500;
   font-size: 20px;
-  outline: 3px solid rebeccapurple;
-  outline-offset: -8px;
 }
+
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
@@ -14,6 +13,7 @@
   .main-nav {
     margin-top: 0;
     font-size: 18px;
+    font-weight: 400;
   }
 }
 
