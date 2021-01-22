@@ -37,20 +37,20 @@ a {
 }
 
 .container {
-  max-width: 280px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .button {
   display: block;
-  width: 240px;
-  padding: 10px 20px;
+  width: 280px;
+  padding: 9px 20px 10px 20px;
   font-family: "Oswald", "Roboto", sans-serif;
   font-weight: normal;
   text-align: center;
   color: $white;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   background-color: $green;
   outline: none;
@@ -75,14 +75,14 @@ fieldset {
 
 @media (min-width: $tablet-width) {
   .container {
-    max-width: 709px;
+    max-width: 768px;
     margin: 0 auto;
     padding: 0 30px;
   }
 
   .button {
-    width: 192px;
-    padding: 10px 26px;
+    width: 244px;
+    padding: 13px 26px;
     font-size: 20px;
   }
 
@@ -94,8 +94,12 @@ fieldset {
 
 @media (min-width: $desktop-width) {
   .container {
-    max-width: 1220px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 110px;
   }
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
 }
