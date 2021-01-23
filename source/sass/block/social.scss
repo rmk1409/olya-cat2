@@ -1,5 +1,23 @@
 .social__list {
   display: flex;
   justify-content: space-between;
-  width: 123px;
+  align-items: center;
+  width: 128px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list--vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .social__list--insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__list--fb {
+    width: 28px;
+    height: 33px;
+  }
 }
