@@ -58,6 +58,15 @@ a {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: $green-hover;
+}
+
+.button:active {
+  background-color: $green-hover;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .title {
   margin: 0;
   font-weight: normal;

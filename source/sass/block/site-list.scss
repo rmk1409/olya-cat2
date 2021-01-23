@@ -5,6 +5,14 @@
   border-top: 1px solid $dark-gray;
 }
 
+.site-list__item a:hover{
+  opacity: 0.6;
+}
+
+.site-list__item a:active{
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .site-list__item {
     margin-top: 4px;
@@ -26,7 +34,12 @@
     margin-left: 34px;
   }
 
-  a .site-list__item {
+  .site-list__item--index a{
     color: $white;
+  }
+
+
+  .site-list__item--index.site-list__item--active {
+    border-bottom: 2px solid $white;
   }
 }

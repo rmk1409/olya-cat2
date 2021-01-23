@@ -5,6 +5,19 @@
   width: 300px;
 }
 
+.development a:active {
+  opacity: 0.3;
+}
+
+.development__logo:hover {
+  fill: $green;
+}
+
+.development__logo:active {
+  fill: $green;
+  opacity: 0.3;
+}
+
 .development__title {
   margin: 0;
   margin-top: 13px;

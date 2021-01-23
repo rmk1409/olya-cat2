@@ -5,6 +5,26 @@
   width: 128px;
 }
 
+.social__list--vk:hover,
+.social__list--insta:hover {
+  fill: $green;
+}
+
+.social__list--fb:hover {
+  stroke: $green;
+}
+
+.social__list--vk:active,
+.social__list--insta:active {
+  fill: $green;
+  opacity: 0.3;
+}
+
+.social__list--fb:active {
+  stroke: $green;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .social__list--vk {
     width: 30px;

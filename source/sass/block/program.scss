@@ -92,6 +92,10 @@
   background-repeat: no-repeat;
 }
 
+.program__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .program {
     padding: 69px 57px 55px 53px;
@@ -147,7 +151,7 @@
   }
 
   .program__link::before {
-  display: none;
+    display: none;
   }
 
   .program__link::after {

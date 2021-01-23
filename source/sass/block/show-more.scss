@@ -37,6 +37,16 @@
   background-color: $basic-gray;
 }
 
+.show-more__button:hover {
+  background-color: $gray-hover;
+}
+
+.show-more__button:active {
+  background-color: $gray-hover;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+
 @media (min-width: $tablet-width) {
   .show-more {
     padding: 20px 20px 35px 20px;
