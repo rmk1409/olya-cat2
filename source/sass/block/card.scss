@@ -1,3 +1,9 @@
+.card {
+  padding: 0 20px 17px;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .cars__title {
   margin: 0;
   width: 98px;
@@ -52,7 +58,7 @@
   }
 
   .card__button {
-    margin-top: 30px;
+    margin-top: 28px;
     width: 250px;
     font-size: 16px;
     padding: 8px 20px;
@@ -66,8 +72,7 @@
 
   .card__button {
     width: 168px;
-    margin-top: 33px;
-    margin-left: 40px;
+    margin-top: 40px;
   }
 
   .card__info {

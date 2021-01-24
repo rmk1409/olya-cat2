@@ -1,18 +1,17 @@
 .main-page {
-  padding-top: 26px;
+  padding-top: 23px;
   padding-bottom: 25px;
   display: block;
-  outline: 3px solid red;
 }
 
 @media (min-width: $tablet-width) {
   .main-page {
-    padding-top: 51px;
+    padding-top: 33px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-page {
-    padding-top: 61px;
+    padding-top: 57px;
   }
 }

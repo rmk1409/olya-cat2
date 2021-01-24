@@ -15,10 +15,16 @@
 
 .card-grid__info {
   margin-top: 3px;
+  border-collapse: collapse;
+}
+
+td:first-child {
+  padding-top: 1px;
 }
 
 td:last-child {
   text-align: end;
+  padding-top: 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,6 +32,10 @@ td:last-child {
     display: flex;
     flex-direction: column;
     gap: 7px;
+  }
+
+  tr {
+    border-bottom: 1px solid $gray-stroke;
   }
 
   td:last-child {
@@ -53,6 +63,6 @@ td:last-child {
   }
 
   .card-grid__info {
-    margin-left: 39px;
+    margin: 0 auto;
   }
 }

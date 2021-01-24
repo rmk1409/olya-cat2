@@ -2,7 +2,7 @@
   padding-top: 17px;
   padding-bottom: 18px;
   text-align: center;
-  border-top: 1px solid $dark-gray;
+  border-bottom: 1px solid $gray-stroke;
 }
 
 .site-list__item a:hover{
@@ -19,7 +19,7 @@
     margin-right: 0px;
     margin-left: 36px;
     padding-bottom: 6px;
-    border-top: none;
+    border-bottom: none;
   }
 
   .site-list__item--active {

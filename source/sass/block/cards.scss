@@ -1,13 +1,13 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-top: 38px;
+  gap: 11px;
+  margin-top: 42px;
 }
 
 .cards__item {
-  border-top: 1px solid #444444;
-  padding: 5px 0px;
+  border-top: 1px solid $gray-stroke;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,8 +15,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 62px;
-    row-gap: 33px;
-    margin-top: 60px;
+    row-gap: 42px;
+    margin: 0 auto;
+    margin-top: 66px;
+    padding: 0 26px;
+    max-width: 768px;
   }
 
   .cards__item {
@@ -26,9 +29,11 @@
 
 @media (min-width: $desktop-width) {
   .cards {
+    max-width: 1270px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 65px;
     column-gap: 79px;
-    row-gap: 33px;
+    row-gap: 48px;
   }
 }

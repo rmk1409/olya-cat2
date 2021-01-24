@@ -1,11 +1,14 @@
 .nav {
   display: flex;
   flex-direction: column;
-  padding-top: 12px;
+  padding-top: 16px;
 }
 
 @media (min-width: $tablet-width) {
   .nav {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
     padding-top: 20px;
     padding-bottom: 15px;
     flex-direction: row;
@@ -15,9 +18,11 @@
 
 @media (min-width: $desktop-width) {
   .nav {
+    max-width: 1440px;
+    padding: 0 110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 53px;
+    padding-top: 51px;
   }
 }
