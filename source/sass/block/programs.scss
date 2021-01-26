@@ -1,5 +1,15 @@
 .programs {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  outline: 3px solid red;
+  margin-top: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-top: 82px;
+  }
 }

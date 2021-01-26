@@ -1,11 +1,6 @@
-.card {
-  padding-bottom: 16px;
-  padding-top: 13px;
-  outline: 3px solid green;
-  outline-offset: 7px;
-}
-
-.cars__title {
+.card__title {
+  margin: 0;
+  width: 98px;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -25,36 +20,48 @@
 }
 
 .card__button {
-  margin: 0 auto;
-  margin-top: 13px;
-
+  margin: 9px auto 0;
   width: 281px;
-}
-
-.card__grid {
-  padding: 10px;
-  outline: 3px solid darkblue;
-  outline-offset: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .card {
-    width: 324px;
     text-align: center;
-    background-color: $basic-gray;
   }
 
   .card__info {
+    margin: 10px auto 10px;
+    font-size: 16px;
+    width: 250px;
+  }
+
+  .card__title {
+    width: 157px;
+    font-size: 20px;
+    line-height: 24px;
     margin: 0 auto;
+  }
+
+  .card__img {
+    width: 208px;
+    height: 229px;
+  }
+
+  .card__button {
+    margin-top: 22px;
+    width: 250px;
+    font-size: 16px;
+    padding: 8px 21px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .card {
-    width: 234px;
+  .card__button {
+    width: 168px;
+    margin-top: 26px;
   }
 
-  .card__button {
+  .card__info {
     width: 168px;
   }
 }

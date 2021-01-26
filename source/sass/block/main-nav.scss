@@ -1,25 +1,30 @@
 .main-nav {
-  margin-top: 16px;
   font-weight: 500;
   font-size: 20px;
-  outline: 3px solid rebeccapurple;
-  outline-offset: -8px;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
+    justify-content: space-between;
+    width: 440px;
   }
 
   .main-nav {
-    margin-top: 0;
+    margin-top: 5px;
     font-size: 18px;
+    font-weight: 400;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    margin-top: 0;
+    margin-top: 6px;
     font-size: 20px;
+    z-index: 1;
+  }
+
+  .main-nav__list {
+    width: 479px;
   }
 }

@@ -1,25 +1,39 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  margin-top: 44px;
-  outline: 3px solid lawngreen;
-  outline-offset: 12px;
+  gap: 14px;
+  margin-top: 39px;
+}
+
+.cards__item {
+  border-top: 1px solid $gray-hover;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    margin-top: 60px;
+    column-gap: 60px;
+    row-gap: 43px;
+    margin: 66px auto 0;
+    padding: 0 31px;
+    max-width: 768px;
+  }
+
+  .cards__item {
+    border-top: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cards {
+    max-width: 1270px;
     display: grid;
-    grid-template-columns: 245px 245px 245px 245px;
-    gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 65px;
+    column-gap: 79px;
+    row-gap: 43px;
+    padding: 0 23px;
   }
 }

@@ -1,0 +1,19 @@
+.card-container {
+  padding: 4px 20px 10px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .card-container {
+    padding-bottom: 38px;
+    width: 324px;
+    background: linear-gradient(180deg, $white 20px 99px, $gray 99px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-container {
+    width: 246px;
+  }
+}

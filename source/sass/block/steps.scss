@@ -1,45 +1,39 @@
-.step {
-  padding-left: 100px;
-  font-family: "Arial", "Roboto", sans-serif;
-  font-weight: normal;
-  text-transform: none;
+.steps {
+  margin-top: 15px;
+  padding: 13px 20px;
 }
 
-.steps {
-  margin-top: 20px;
-  padding: 13px 20px;
-  outline: 3px solid red;
+.steps__list {
+  margin-top: 39px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
 @media (min-width: $tablet-width) {
   .steps {
-    padding: 13px 30px;
+    margin-top: 34px;
+    padding: 13px 30px 50px 30px;
   }
 
   .steps__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 28px;
-  }
-
-  .step {
-    padding-left: 0;
-    padding-top: 100px;
-    width: 200px;
-    font-size: 16px;
-    line-height: 24px;
+    row-gap: 99px;
+    column-gap: 61px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .steps__list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    column-gap: 79px;
   }
 
   .steps {
     margin-top: 20px;
-    padding: 63px 110px;
-    outline: 3px solid red;
+    padding: 56px 110px;
   }
 }

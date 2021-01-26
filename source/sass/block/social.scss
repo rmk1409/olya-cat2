@@ -1,5 +1,45 @@
 .social__list {
   display: flex;
   justify-content: space-between;
-  width: 123px;
+  align-items: center;
+  width: 128px;
+
+  &--vk:hover,
+  &--insta:hover {
+    fill: $green;
+  }
+
+  &--fb:hover {
+    stroke: $green;
+  }
+
+  &--vk:active,
+  &--insta:active {
+    fill: $green;
+    opacity: 0.3;
+  }
+
+  &--fb:active {
+    stroke: $green;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    &--vk {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 28px;
+      height: 33px;
+    }
+  }
 }
