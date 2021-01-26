@@ -4,13 +4,11 @@
   gap: 22px;
 }
 
-
 @media (min-width: $tablet-width) {
   .programs-list {
     gap: 32px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .programs-list {

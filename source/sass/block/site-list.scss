@@ -5,25 +5,27 @@
   border-bottom: 1px solid $gray-stroke;
 }
 
-.site-list__item a:hover{
-  opacity: 0.6;
-}
+.site-list__link {
+  &:hover {
+    opacity: 0.6;
+  }
 
-.site-list__item a:active{
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .site-list__item {
     margin-top: 4px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 36px;
     padding-bottom: 6px;
     border-bottom: none;
-  }
 
-  .site-list__item--active {
-    border-bottom: 2px solid $green;
+    &--active {
+      border-bottom: 2px solid $green;
+    }
   }
 }
 
@@ -34,10 +36,9 @@
     margin-left: 34px;
   }
 
-  .site-list__item--index a{
+  .site-list__item--index .site-list__link {
     color: $white;
   }
-
 
   .site-list__item--index.site-list__item--active {
     border-bottom: 2px solid $white;

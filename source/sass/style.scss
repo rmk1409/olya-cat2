@@ -1,6 +1,6 @@
 @import "fonts";
 @import "color";
-@import "viewports";
+@import "viewport-sizes";
 @import "common";
 @import "block/nav";
 @import "block/header-nav";
@@ -17,6 +17,7 @@
 @import "block/img-result";
 @import "block/main-page";
 @import "block/cards";
+@import "block/card-container";
 @import "block/card";
 @import "block/card-grid";
 @import "block/show-more";

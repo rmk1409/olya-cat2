@@ -75,12 +75,11 @@ a {
   text-transform: none;
 }
 
-fieldset {
+.fieldset-reset {
   padding: 0;
   outline: none;
   border: none;
 }
-
 
 @media (min-width: $tablet-width) {
   .container {
@@ -109,6 +108,8 @@ fieldset {
   }
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }

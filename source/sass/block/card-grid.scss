@@ -1,7 +1,7 @@
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .card-grid__img {
@@ -18,11 +18,11 @@
   border-collapse: collapse;
 }
 
-td:first-child {
+.card-grid__info-description:first-child {
   padding-top: 1px;
 }
 
-td:last-child {
+.card-grid__info-description:last-child {
   text-align: end;
   padding-top: 1px;
 }
@@ -38,16 +38,16 @@ td:last-child {
     margin-top: 7px;
   }
 
-  tr {
+  .card-grid__info-string {
     border-bottom: 1px solid $gray-stroke;
   }
 
-  td:last-child {
+  .card-grid__info-description:last-child {
     padding-top: 6px;
     padding-bottom: 9px;
   }
 
-  td:first-child {
+  .card-grid__info-description:first-child {
     text-align: start;
     padding-top: 6px;
     padding-bottom: 9px;
@@ -67,5 +67,4 @@ td:last-child {
   .card-grid {
     gap: 6px;
   }
-
 }

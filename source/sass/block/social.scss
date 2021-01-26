@@ -3,41 +3,43 @@
   justify-content: space-between;
   align-items: center;
   width: 128px;
-}
 
-.social__list--vk:hover,
-.social__list--insta:hover {
-  fill: $green;
-}
+  &--vk:hover,
+  &--insta:hover {
+    fill: $green;
+  }
 
-.social__list--fb:hover {
-  stroke: $green;
-}
+  &--fb:hover {
+    stroke: $green;
+  }
 
-.social__list--vk:active,
-.social__list--insta:active {
-  fill: $green;
-  opacity: 0.3;
-}
+  &--vk:active,
+  &--insta:active {
+    fill: $green;
+    opacity: 0.3;
+  }
 
-.social__list--fb:active {
-  stroke: $green;
-  opacity: 0.3;
+  &--fb:active {
+    stroke: $green;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .social__list--vk {
-    width: 30px;
-    height: 22px;
-  }
+  .social__list {
+    &--vk {
+      width: 30px;
+      height: 22px;
+    }
 
-  .social__list--insta {
-    width: 23px;
-    height: 23px;
-  }
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
 
-  .social__list--fb {
-    width: 28px;
-    height: 33px;
+    &--fb {
+      width: 28px;
+      height: 33px;
+    }
   }
 }

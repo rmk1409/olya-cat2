@@ -5,15 +5,15 @@
   width: 300px;
 }
 
-.development a:active {
+.development__link:active {
   opacity: 0.3;
 }
 
-.development__logo:hover {
+.development__link-logo:hover {
   fill: $green;
 }
 
-.development__logo:active {
+.development__link-logo:active {
   fill: $green;
   opacity: 0.3;
 }
@@ -28,18 +28,18 @@
   text-transform: none;
 }
 
-.development__logo {
+.development__link {
   margin-top: 6px;
 }
 
 
 @media (min-width: $tablet-width) {
   .development {
-    padding: 0px 9px;
+    padding: 0 9px;
     width: 180px;
   }
 
-  .development__logo {
+  .development__link {
     margin-top: 0;
   }
 

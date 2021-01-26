@@ -6,12 +6,14 @@
   text-align: center;
 }
 
-.footer-nav a:hover {
-  opacity: 0.8;
-}
+.footer-nav__link {
+  &:hover {
+    opacity: 0.8;
+  }
 
-.footer-nav a:active {
-  opacity: 0.6;
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer-nav__social {
@@ -44,7 +46,6 @@
     margin-top: 0;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .footer-nav {

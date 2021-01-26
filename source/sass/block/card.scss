@@ -1,10 +1,4 @@
-.card {
-  padding: 4px 20px 10px;
-  width: 320px;
-  margin: 0 auto;
-}
-
-.cars__title {
+.card__title {
   margin: 0;
   width: 98px;
   font-weight: normal;
@@ -26,17 +20,13 @@
 }
 
 .card__button {
-  margin: 0 auto;
-  margin-top: 9px;
+  margin: 9px auto 0;
   width: 281px;
 }
 
 @media (min-width: $tablet-width) {
   .card {
-    padding-bottom: 38px;
-    width: 324px;
     text-align: center;
-    background: linear-gradient(180deg, $white 20px 99px, $gray 99px);
   }
 
   .card__info {
@@ -45,7 +35,7 @@
     width: 250px;
   }
 
-  .cars__title {
+  .card__title {
     width: 157px;
     font-size: 20px;
     line-height: 24px;
@@ -66,10 +56,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .card {
-    width: 246px;
-  }
-
   .card__button {
     width: 168px;
     margin-top: 26px;

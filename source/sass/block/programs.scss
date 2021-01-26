@@ -2,13 +2,11 @@
   margin-top: 4px;
 }
 
-
 @media (min-width: $tablet-width) {
   .programs {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .programs {
