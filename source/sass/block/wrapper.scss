@@ -21,9 +21,12 @@
     background: linear-gradient(180deg, $white 20px 150px, $gray 150px);
   }
 
-  //.wrapper-promo {
-  //  z-index: -2;
-  //  background: linear-gradient(90deg, $white 20px 769px, $green-wrapper 769px);
-  //}
+  .wrapper-promo {
+    background: linear-gradient(90deg, $white 46% 50%, $green 49%);
+  }
+
+  .wrapper__header{
+    background: linear-gradient(90deg, $white 46% 50%, $green 49%);
+  }
 
 }

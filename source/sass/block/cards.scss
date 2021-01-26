@@ -1,12 +1,12 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 11px;
-  margin-top: 42px;
+  gap: 14px;
+  margin-top: 39px;
 }
 
 .cards__item {
-  border-top: 1px solid $gray-stroke;
+  border-top: 1px solid $gray-hover;
   padding: 0;
 }
 
@@ -14,11 +14,11 @@
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 62px;
-    row-gap: 42px;
+    column-gap: 60px;
+    row-gap: 43px;
     margin: 0 auto;
     margin-top: 66px;
-    padding: 0 26px;
+    padding: 0 31px;
     max-width: 768px;
   }
 
@@ -34,6 +34,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 65px;
     column-gap: 79px;
-    row-gap: 48px;
+    row-gap: 43px;
+    padding: 0 23px;
   }
 }

@@ -94,7 +94,7 @@
   .header-nav {
     padding: 0 7px;
     border-bottom: none;
-    padding-bottom: 21px;
+    padding-bottom: 16px;
   }
 
 
@@ -105,6 +105,8 @@
 
   .header-nav__logo--tablet {
     display: block;
+    margin-top: 4px;
+    margin-left: -5px;
   }
 
   .header-nav__logo--text,
@@ -116,6 +118,8 @@
 @media (min-width: $desktop-width) {
   .header-nav__logo--desktop {
     display: block;
+    margin-top: 1px;
+    margin-left: -5px;
   }
 
   .header-nav__logo--tablet {

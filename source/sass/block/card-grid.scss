@@ -34,27 +34,33 @@ td:last-child {
     gap: 7px;
   }
 
+  .card-grid__info {
+    margin-top: 7px;
+  }
+
   tr {
     border-bottom: 1px solid $gray-stroke;
   }
 
   td:last-child {
-    padding-top: 14px;
+    padding-top: 6px;
+    padding-bottom: 9px;
   }
 
   td:first-child {
     text-align: start;
-    padding-top: 14px;
+    padding-top: 6px;
+    padding-bottom: 9px;
   }
 
   .card-grid__title {
-    margin-top: 6px;
+    margin-top: 3px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .card-grid__title {
-    margin-top: 8px;
+    margin-top: 5px;
     line-height: 21px;
   }
 
@@ -62,7 +68,4 @@ td:last-child {
     gap: 6px;
   }
 
-  .card-grid__info {
-    margin: 0 auto;
-  }
 }

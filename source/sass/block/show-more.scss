@@ -5,7 +5,7 @@
 .show-more__title {
   position: relative;
   margin: 0;
-  padding-top: 71px;
+  padding-top: 75px;
   font-size: 16px;
   text-align: center;
 }
@@ -13,8 +13,8 @@
 .show-more__title::before {
   position: absolute;
   content: "";
-  top: 20px;
-  left: 168px;
+  top: 24px;
+  left: 145px;
   width: 30px;
   height: 30px;
   background-image: url("../img/plus.svg");
@@ -51,7 +51,7 @@
   .show-more {
     padding: 20px 20px 35px 20px;
     margin-top: 98px;
-    border: 1px solid;
+    border: 2px solid $basic-gray;
   }
 
   .show-more__button {

@@ -92,6 +92,12 @@
   background-repeat: no-repeat;
 }
 
+
+.program__link:hover::after {
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+}
+
+
 .program__link:active {
   opacity: 0.3;
 }

@@ -111,6 +111,10 @@
   background-repeat: no-repeat;
 }
 
+.step__description--br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
 
   .step {
@@ -239,6 +243,10 @@
     height: 280px;
     background-image: url("../img/4.svg");
     background-repeat: no-repeat;
+  }
+
+  .step__description--br {
+    display: block;
   }
 
 }
