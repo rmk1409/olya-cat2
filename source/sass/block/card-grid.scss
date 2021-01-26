@@ -18,11 +18,11 @@
   border-collapse: collapse;
 }
 
-.card-grid__info-description:first-child {
+.card-grid__info-meaning {
   padding-top: 1px;
 }
 
-.card-grid__info-description:last-child {
+.card-grid__info-definition {
   text-align: end;
   padding-top: 1px;
 }
@@ -38,16 +38,16 @@
     margin-top: 7px;
   }
 
-  .card-grid__info-string {
+  .card-grid__info-row {
     border-bottom: 1px solid $gray-stroke;
   }
 
-  .card-grid__info-description:last-child {
+  .card-grid__info-meaning {
     padding-top: 6px;
     padding-bottom: 9px;
   }
 
-  .card-grid__info-description:first-child {
+  .card-grid__info-definition {
     text-align: start;
     padding-top: 6px;
     padding-bottom: 9px;

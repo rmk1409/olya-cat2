@@ -1,5 +1,5 @@
-let nav = document.querySelector('.nav');
-let navToggle = document.querySelector('.header-nav__toggle');
+const nav = document.querySelector('.nav');
+const navToggle = document.querySelector('.header-nav__toggle');
 
 nav.classList.remove('nav--nojs');
 

@@ -17,9 +17,6 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    margin-top: 4px;
-    margin-right: 0;
-    margin-left: 36px;
     padding-bottom: 6px;
     border-bottom: none;
 
@@ -33,7 +30,6 @@
   .site-list__item {
     padding-top: 13px;
     padding-bottom: 5px;
-    margin-left: 34px;
   }
 
   .site-list__item--index .site-list__link {

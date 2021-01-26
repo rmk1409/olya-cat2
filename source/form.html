@@ -48,15 +48,15 @@
       <fieldset class="form__fieldset fieldset-reset">
         <label class="form__element">
           Имя:*
-          <input type="text" name="name" placeholder="Барсик" minlength="1">
+          <input class="form__element--name" type="text" name="name" placeholder="Барсик" minlength="1">
         </label>
         <label class="form__element">
           Вес (кг):*
-          <input type="number" name="weight" placeholder="7" minlength="1">
+          <input class="form__element--weight" type="number" name="weight" placeholder="7" minlength="1">
         </label>
         <label class="form__element">
           Возраст (лет):*
-          <input type="number" name="age" placeholder="7" minlength="1">
+          <input class="form__element--age" type="number" name="age" placeholder="7" minlength="1">
         </label>
       </fieldset>
       <fieldset class="form__fieldset form-radio fieldset-reset">
@@ -98,7 +98,7 @@
     <fieldset class="form__fieldset fieldset-reset">
       <legend class="form__legend">Комментарий</legend>
       <label class="visually-hidden" for="write-to-us">Напишите комментарий</label>
-      <textarea id="write-to-us" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <textarea class="form__element--textarea" id="write-to-us" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
     <fieldset class="form__fieldset form-checkbox fieldset-reset">
       <legend class="form__legend">Дополнительно</legend>

@@ -9,13 +9,15 @@
   opacity: 0.3;
 }
 
-.development__link-logo:hover {
-  fill: $green;
-}
+.development__link-logo {
+  &:hover {
+    fill: $green;
+  }
 
-.development__link-logo:active {
-  fill: $green;
-  opacity: 0.3;
+  &:active {
+    fill: $green;
+    opacity: 0.3;
+  }
 }
 
 .development__title {

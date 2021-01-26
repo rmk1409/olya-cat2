@@ -8,8 +8,12 @@
   outline-offset: 2px;
 }
 
-[placeholder],
-.form__element,
+.form__element--email[placeholder],
+.form__element--phone[placeholder],
+.form__element--name[placeholder],
+.form__element--weight[placeholder],
+.form__element--age[placeholder],
+.form__element--textarea[placeholder],
 .form__fieldset {
   font-family: "Oswald", "Roboto", sans-serif;
   font-weight: normal;
