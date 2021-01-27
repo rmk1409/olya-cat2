@@ -178,7 +178,7 @@
     padding-left: 161px;
 
     &--slim {
-      ::before {
+      &::before {
         top: -21px;
         left: -2px;
         width: 100px;

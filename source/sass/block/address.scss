@@ -1,0 +1,22 @@
+.address {
+  margin-right: -4px;
+}
+
+.address__street {
+  margin: 0;
+}
+
+.address__city {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .address {
+    margin-top: -4px;
+  }
+
+  .address__city {
+    margin-top: 19px;
+  }
+
+}

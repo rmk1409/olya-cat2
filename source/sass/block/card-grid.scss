@@ -20,12 +20,14 @@
 
 .card-grid__info-meaning {
   padding-top: 1px;
+  text-align: end;
 }
 
 .card-grid__info-definition {
-  text-align: end;
   padding-top: 1px;
+  text-align: start;
 }
+
 
 @media (min-width: $tablet-width) {
   .card-grid {
@@ -48,7 +50,6 @@
   }
 
   .card-grid__info-definition {
-    text-align: start;
     padding-top: 6px;
     padding-bottom: 9px;
   }

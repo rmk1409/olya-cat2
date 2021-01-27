@@ -1,15 +1,15 @@
 .goods {
-  padding: 10px 20px;
-  margin-top: 11px;
-  outline: 3px solid darkgoldenrod;
-  outline-offset: 3px;
+  padding-top: 9px;
+  border-top: 1px solid #CDCDCD;
 }
 
 .goods__title {
   font-weight: normal;
+  margin: 0;
 }
 
 .goods__info {
+  margin-top: 7px;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -18,12 +18,25 @@
   text-transform: none;
 }
 
+.goods__info-text {
+  margin: 0;
+}
+
+.goods__button {
+  margin-top: 13px;
+}
 
 @media (min-width: $tablet-width) {
   .goods {
+    padding: 17px 36px 10px;
     display: grid;
     grid-template-columns: 1fr 300px;
     align-items: center;
+  }
+
+  .goods__title {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .goods__button {

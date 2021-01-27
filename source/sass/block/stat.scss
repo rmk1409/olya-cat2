@@ -1,11 +1,77 @@
+.stat {
+  text-align: center;
+}
+
+.stat-cost {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+  margin: 0;
+  margin-top: 32px;
+}
+
+
 .stat__number {
+  padding: 12px 11px 11px 10px;
+  margin: 0;
   font-size: 24px;
   line-height: 24px;
+  border: 2px solid #CDCDCD;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .stat__description {
   font-family: "Arial", "Roboto", sans-serif;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 11px;
   text-transform: none;
+  margin: 8px auto -28px;
+  width: 86px;
+  padding: 1px 8px;
+  background-color: $basic-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .stat-cost {
+    width: 189px;
+    margin-top: 1px;
+    margin-left: 113px;
+    grid-column-start: -1;
+    grid-column-end: -2;
+    text-align: end;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .stat__number {
+    padding: 21px 11px 20px 10px;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .stat__description  {
+    font-size: 14px;
+    margin: 19px auto -28px;
+
+    &--weight {
+      width: 113px;
+    }
+
+    &--time {
+      width: 145px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stat-cost {
+    width: 327px;
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: -2;
+    margin-left: 0;
+    text-align: start;
+  }
 }

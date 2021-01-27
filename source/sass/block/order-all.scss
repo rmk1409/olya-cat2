@@ -2,20 +2,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  height: 289px;
+  margin-top: 39px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  outline: 3px solid darkgoldenrod;
-  outline-offset: 2px;
 }
 
 .order-all__description {
-  padding-top: 180px;
+  position: relative;
+  padding-top: 173px;
   width: 160px;
   font-family: "Arial", "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
   text-transform: none;
   color: $white;
   text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 43px;
+    left: 41px;
+    width: 78px;
+    height: 80px;
+    background-image: url(../img/icon-gift.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
