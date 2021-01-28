@@ -5,3 +5,19 @@
   gap: 16px;
   border-bottom: 1px solid #CDCDCD;
 }
+
+
+@media (min-width: $tablet-width) {
+  .goods-grid {
+    gap: 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-grid {
+    padding-bottom: 1px;
+    gap: 0;
+    border-bottom: 1px solid #CDCDCD;
+  }
+}

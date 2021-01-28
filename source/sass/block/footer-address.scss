@@ -44,7 +44,11 @@
   .footer-address {
     position: absolute;
     top: 96px;
-    width: 399px;
-    padding: 20px 76px;
+    width: 570px;
+    padding: 69px 89px 58px 75px;
+  }
+
+  .footer-address__description {
+    text-align: start;
   }
 }

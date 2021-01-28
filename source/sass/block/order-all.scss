@@ -31,30 +31,57 @@
   }
 }
 
+.order-all__br-tablet {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .order-all {
-    height: 100%;
+    padding: 58px 0px;
+    margin-top: 53px;
+    height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
   }
 
   .order-all__description {
-    padding-top: 10px;
-    padding-left: 400px;
+    padding-top: 0;
+    padding-left: 265px;
+    margin-left: 37px;
+    width: 429px;;
     text-align: start;
+    font-size: 16px;
+
+    &::before {
+      top: -16px;
+      left: -79px;
+    }
+  }
+
+  .order-all__br-tablet {
+    display: block;
   }
 }
 
 @media (min-width: $desktop-width) {
   .order-all {
+    margin-top: 0;
+    padding: 0 0;
     height: 100%;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
   }
 
   .order-all__description {
-    padding-top: 180px;
+    margin-left: 0;
+    padding-top: 172px;
     padding-left: 0;
+    width: 177px;
     text-align: center;
+
+    &::before {
+      top: 42px;
+      left: 51px;
+    }
   }
 }
