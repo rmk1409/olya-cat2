@@ -66,11 +66,18 @@
 @media (min-width: $desktop-width) {
   .goods {
     display: flex;
-    justify-content: space-between;
+    justify-content: normal;
     align-items: baseline;
     padding: 5px 0px 14px;
     border:none;
     border-top: 1px solid #CDCDCD;
+  }
+
+  .goods__info {
+    margin-left: auto;
+    margin-right: 39px;
+    width: 286px;
+    justify-content: space-between;
   }
 
   .goods__button {

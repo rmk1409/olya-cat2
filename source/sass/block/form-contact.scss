@@ -1,0 +1,41 @@
+
+.form-contact__grid {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-contact__input {
+  margin-left: 7px;
+  padding: 16px 10px 11px 13px;
+  width: 202px;
+
+  &::placeholder {
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.form-contact__input-email {
+  width: 219px;
+}
+
+.form-contact__label {
+  position: relative;
+}
+
+.form-contact__img-phone {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+}
+
+.form-contact__img-email {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+}

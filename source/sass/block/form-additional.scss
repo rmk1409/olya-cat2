@@ -1,0 +1,44 @@
+.form-additional__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 29px;
+}
+
+.form-additional__item {
+  position: relative;
+  padding-left: 46px;
+}
+
+.form-additional__input {
+  display: none;
+}
+
+.form-additional__checkbox {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CDCDCD;
+  background-color: $white;
+}
+
+.form-additional__input:checked + .form-additional__checkbox::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon-tick.svg");
+}
+
+.form-additional__input:disabled + .form-additional__checkbox {
+  opacity: 0.3;
+}
+
+.form-additional__input:hover + .form-additional__checkbox {
+  border: 1px solid #BABABA;
+}
+

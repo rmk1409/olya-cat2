@@ -3,13 +3,17 @@
 }
 
 .stat-cost {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
   grid-column-start: 1;
   grid-column-end: -1;
   text-align: center;
-  margin: 0;
-  margin-top: 32px;
 }
 
+.stat-cost__description {
+  margin: 0;
+}
 
 .stat__number {
   padding: 12px 11px 11px 10px;
@@ -34,6 +38,7 @@
 
 @media (min-width: $tablet-width) {
   .stat-cost {
+    flex-direction: column;
     width: 189px;
     margin-top: 1px;
     margin-left: 113px;
@@ -66,6 +71,7 @@
 
 @media (min-width: $desktop-width) {
   .stat-cost {
+    flex-direction: row;
     width: 327px;
     display: flex;
     justify-content: space-between;

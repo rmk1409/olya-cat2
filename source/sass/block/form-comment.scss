@@ -1,0 +1,15 @@
+.form-comment__textarea {
+  width: 283px;
+  height: 151px;
+  margin-top: 32px;
+  padding: 3px 15px 3px;
+  resize: none;
+}
+
+.form-comment__textarea::placeholder {
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+}

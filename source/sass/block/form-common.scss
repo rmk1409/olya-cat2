@@ -1,0 +1,28 @@
+.form-common {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-common__input {
+  margin-left: 10px;
+  padding: 12px 10px 12px 13px;
+  width: 164px;
+
+  &--name {
+    width: 227px;
+  }
+
+  &--weight {
+    margin-left: 13px;
+    width: 203px;
+  }
+
+  &--age {
+    margin-left: 6px;
+    width: 170px;
+  }
+
+}
+
+
