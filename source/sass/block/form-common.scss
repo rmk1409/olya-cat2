@@ -7,7 +7,15 @@
 .form-common__input {
   margin-left: 10px;
   padding: 12px 10px 12px 13px;
-  width: 164px;
+  width: 170px;
+
+  &::placeholder {
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
 
   &--name {
     width: 227px;
@@ -20,9 +28,58 @@
 
   &--age {
     margin-left: 6px;
-    width: 170px;
   }
 
 }
 
+@media (min-width: $tablet-width) {
+  .form-common {
+    gap: 21px;
+  }
 
+  .form-common__input {
+    margin-left: 10px;
+    padding: 20px 10px 12px 18px;
+    width: 494px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &--name {
+      width: 566px;
+    }
+
+    &--weight {
+      margin-left: 15px;
+      width: 533px;
+    }
+
+    &--age {
+      margin-left: 5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-common__input {
+    padding: 20px 10px 12px 20px;
+    width: 436px;
+
+    &--name {
+      width: 508px;
+    }
+
+    &--weight {
+      margin-left: 15px;
+      padding-left: 17px;
+      width: 474px;
+    }
+
+    &--age {
+      margin-left: 12px;
+      padding-left: 16px;
+    }
+  }
+}

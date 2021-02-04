@@ -44,10 +44,39 @@
   background-color: $green;
 }
 
-.form-program__input:hover + .form-program__radio{
+.form-program__input:hover + .form-program__radio {
   border: 1px solid #BABABA;
 }
 
 .form-program__input:disabled + .form-program__radio {
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .form-program__list {
+    margin-left: 90px;
+    max-width: 555px;
+    gap: 23px;
+  }
+
+  .form-program__radio {
+    left: -13px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-program__input:checked + .form-program__radio::before {
+    top: 9px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .form-program__list {
+    margin-top: 1px;
+    margin-left: 21px;
+  }
 }

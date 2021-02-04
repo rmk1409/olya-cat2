@@ -42,3 +42,53 @@
   border: 1px solid #BABABA;
 }
 
+@media (min-width: $tablet-width) {
+  .form-additional__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+    row-gap: 42px;
+    margin-top: 46px;
+  }
+
+  .form-additional__item {
+    padding-left: 59px;
+  }
+
+  .form-additional__checkbox {
+    top: -4px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-additional__input:checked + .form-additional__checkbox::before {
+    top: 12px;
+    left: 10px;
+    width: 18px;
+    height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-additional__list {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .form-additional__item {
+    &--water {
+      margin-left: 44px;
+    }
+
+    &--milk {
+      margin-left: 77px;
+    }
+
+    &--vitamins {
+      margin-left: 138px;
+    }
+  }
+}

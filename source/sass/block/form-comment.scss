@@ -13,3 +13,24 @@
   font-size: 16px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .form-comment__textarea {
+    width: 631px;
+    height: 174px;
+    margin-top: 65px;
+    padding: 10px 20px 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+.form-comment__textarea {
+  width: 1220px;
+  padding: 10px 18px 20px;
+}
+}

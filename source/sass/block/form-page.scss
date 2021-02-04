@@ -9,3 +9,38 @@
   width: 250px;
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-page {
+    padding-bottom: 63px;
+  }
+
+  .form-page__title {
+    margin-top: 10px;
+    margin-left: 39px;
+  }
+
+  .form-page__description {
+    font-size: 20px;
+    line-height: 30px;
+    width: 367px;
+    margin-top: 54px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__title {
+    margin-top: 36px;
+    margin-left: 0px;
+  }
+
+  .form-page__description {
+    margin-top: 57px;
+    margin-left: 0px;
+  }
+
+  .form-page {
+    padding-bottom: 69px;
+  }
+}
