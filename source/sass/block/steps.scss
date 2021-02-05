@@ -4,10 +4,10 @@
 }
 
 .steps__list {
-  margin-top: 39px;
   display: flex;
   flex-direction: column;
   gap: 26px;
+  margin-top: 39px;
 }
 
 @media (min-width: $tablet-width) {

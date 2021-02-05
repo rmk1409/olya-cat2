@@ -10,8 +10,8 @@
 
 .order-all__description {
   position: relative;
-  padding-top: 173px;
   width: 160px;
+  padding-top: 173px;
   font-family: "Arial", "Roboto", sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -37,18 +37,18 @@
 
 @media (min-width: $tablet-width) {
   .order-all {
-    padding: 58px 0;
-    margin-top: 53px;
     height: 200px;
+    margin-top: 53px;
+    padding: 58px 0;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
   }
 
   .order-all__description {
+    width: 429px;
+    margin-left: 37px;
     padding-top: 0;
     padding-left: 265px;
-    margin-left: 37px;
-    width: 429px;
     text-align: start;
     font-size: 16px;
 
@@ -65,18 +65,18 @@
 
 @media (min-width: $desktop-width) {
   .order-all {
+    height: 100%;
     margin-top: 0;
     padding: 0;
-    height: 100%;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
   }
 
   .order-all__description {
+    width: 177px;
     margin-left: 0;
     padding-top: 172px;
     padding-left: 0;
-    width: 177px;
     text-align: center;
 
     &::before {

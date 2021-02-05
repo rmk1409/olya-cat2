@@ -1,8 +1,8 @@
 .development {
-  padding: 13px 9px;
   display: flex;
   justify-content: space-between;
   width: 300px;
+  padding: 13px 9px;
 }
 
 .development__link:active {
@@ -37,8 +37,8 @@
 
 @media (min-width: $tablet-width) {
   .development {
-    padding: 0 9px;
     width: 180px;
+    padding: 0 9px;
   }
 
   .development__link {

@@ -6,8 +6,8 @@
 }
 
 .cards__item {
-  border-top: 1px solid $gray-hover;
   padding: 0;
+  border-top: 1px solid $gray-hover;
 
   &--show {
     border-bottom: 1px solid #ebebeb;
@@ -20,9 +20,9 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 43px;
-    margin: 66px auto 0;
-    padding: 0 31px;
     max-width: 768px;
+    padding: 0 31px;
+    margin: 66px auto 0;
   }
 
   .cards__item {
@@ -36,12 +36,12 @@
 
 @media (min-width: $desktop-width) {
   .cards {
-    max-width: 1270px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 65px;
     column-gap: 79px;
     row-gap: 43px;
+    max-width: 1270px;
     padding: 0 23px;
+    margin-top: 65px;
   }
 }

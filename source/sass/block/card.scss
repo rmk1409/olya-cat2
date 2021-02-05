@@ -1,6 +1,6 @@
 .card__title {
-  margin: 0;
   width: 98px;
+  margin: 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -20,8 +20,8 @@
 }
 
 .card__button {
-  margin: 9px auto 0;
   width: 281px;
+  margin: 9px auto 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,16 +30,16 @@
   }
 
   .card__info {
+    width: 250px;
     margin: 10px auto 10px;
     font-size: 16px;
-    width: 250px;
   }
 
   .card__title {
     width: 157px;
+    margin: 0 auto;
     font-size: 20px;
     line-height: 24px;
-    margin: 0 auto;
   }
 
   .card__img {
@@ -48,10 +48,10 @@
   }
 
   .card__button {
-    margin-top: 22px;
     width: 250px;
-    font-size: 16px;
     padding: 8px 21px;
+    margin-top: 22px;
+    font-size: 16px;
   }
 }
 

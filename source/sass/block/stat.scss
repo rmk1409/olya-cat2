@@ -5,9 +5,9 @@
 .stat-cost {
   display: flex;
   justify-content: center;
-  margin-top: 33px;
   grid-column-start: 1;
   grid-column-end: -1;
+  margin-top: 33px;
   text-align: center;
 }
 
@@ -30,8 +30,8 @@
   font-size: 12px;
   line-height: 11px;
   text-transform: none;
-  margin: 8px auto -28px;
   width: 86px;
+  margin: 8px auto -28px;
   padding: 1px 8px;
   background-color: $gray-wrapper;
 }
@@ -73,11 +73,11 @@
 @media (min-width: $desktop-width) {
   .stat-cost {
     flex-direction: row;
-    width: 327px;
     display: flex;
     justify-content: space-between;
     grid-column-start: 1;
     grid-column-end: -2;
+    width: 327px;
     margin-left: 0;
     text-align: start;
   }

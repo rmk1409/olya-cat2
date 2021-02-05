@@ -1,9 +1,9 @@
 .form-program__list {
-  margin: 0 auto;
-  max-width: 320px;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .form-program__item {
@@ -51,9 +51,9 @@
 
 @media (min-width: $tablet-width) {
   .form-program__list {
-    margin-left: 90px;
-    max-width: 555px;
     gap: 23px;
+    max-width: 555px;
+    margin-left: 90px;
   }
 
   .form-program__label {

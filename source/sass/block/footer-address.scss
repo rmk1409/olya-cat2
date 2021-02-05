@@ -1,9 +1,9 @@
 .footer-address {
-  padding-top: 28px;
-  padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
   gap: 16px;
+  padding-top: 28px;
+  padding-bottom: 26px;
   background-color: $white;
 
   &--catalog {
@@ -31,16 +31,16 @@
   }
 
   .footer-address__title {
+    width: 200px;
     font-size: 20px;
     line-height: 23px;
-    width: 200px;
   }
 
   .footer-address__description {
+    width: 160px;
     font-size: 16px;
     line-height: 20px;
     text-align: end;
-    width: 160px;
   }
 }
 

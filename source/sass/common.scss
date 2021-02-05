@@ -4,11 +4,11 @@
   height: 1px;
   margin: -1px;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  border: 0;
 }
 
 body {
@@ -63,8 +63,8 @@ a {
 }
 
 .button:active {
-  background-color: $green-hover;
   color: rgba(255, 255, 255, 0.3);
+  background-color: $green-hover;
 }
 
 .title {
@@ -76,8 +76,8 @@ a {
 }
 
 .fieldset-reset {
-  padding: 0;
   margin: 0;
+  padding: 0;
   outline: none;
   border: none;
 }

@@ -32,14 +32,12 @@
 
 .form__common {
   max-width: 320px;
-  margin: 0 auto;
-  margin-top: 33px;
+  margin: 33px auto 0;
   padding: 9px 20px;
 }
 
 .form__program {
-  margin: 0 auto;
-  margin-top: 14px;
+  margin: 14px auto 0;
   padding: 28px 20px 20px;
   border-top: 1px solid $gray-stroke;
   border-bottom: 1px solid $gray-stroke;
@@ -47,44 +45,40 @@
 
 .form__contact {
   max-width: 320px;
-  margin: 0 auto;
-  margin-top: 29px;
+  margin: 29px auto 0;
   padding: 9px 20px;
 }
 
 .form__comment {
   max-width: 320px;
-  margin: 0 auto;
-  margin-top: 16px;
+  margin: 16px auto 0;
   padding: 9px 20px;
 }
 
 .form__additional {
   max-width: 320px;
-  margin: 0 auto;
-  margin-top: 8px;
+  margin: 8px auto 0;
   padding: 9px 20px;
 }
 
 .form__button-grid {
   max-width: 320px;
-  margin: 0 auto;
-  margin-top: 9px;
+  margin: 9px auto 0;
   padding: 9px 20px;
 }
 
 .form__button {
-  margin-top: 12px;
   width: 279px;
+  margin-top: 12px;
 }
 
 .form__description {
-  margin-top: 19px;
-  text-align: center;
   display: block;
+  margin-top: 19px;
   font-family: "Arial", "Roboto", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
   text-transform: none;
 }
 
@@ -108,8 +102,8 @@
     }
 
     &::after {
-      left: 220px;
       top: 22px;
+      left: 220px;
     }
   }
 
@@ -168,14 +162,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 768px;
-    margin: 0 auto;
-    margin-top: 22px;
+    margin: 22px auto 0;
     padding: 10px 71px;
   }
 
   .form__button {
-    margin-top: 10px;
     width: 283px;
+    margin-top: 10px;
     padding: 11px 26px;
   }
 

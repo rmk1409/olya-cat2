@@ -47,6 +47,7 @@
   &--age {
     margin-left: 12px;
   }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -55,9 +56,9 @@
   }
 
   .form-common__input {
+    width: 494px;
     margin-left: 10px;
     padding: 20px 10px 12px 18px;
-    width: 494px;
 
     &::placeholder {
       font-size: 20px;
@@ -81,17 +82,17 @@
 
 @media (min-width: $desktop-width) {
   .form-common__input {
-    padding: 20px 10px 12px 20px;
     width: 436px;
+    padding: 20px 10px 12px 20px;
 
     &--name {
       width: 508px;
     }
 
     &--weight {
+      width: 474px;
       margin-left: 15px;
       padding-left: 17px;
-      width: 474px;
     }
 
     &--age {

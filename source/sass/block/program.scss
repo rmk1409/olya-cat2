@@ -65,10 +65,10 @@
 .program__link {
   position: relative;
   display: block;
+  width: 161px;
   margin-top: 20px;
   padding-top: 17px;
   padding-right: 25px;
-  width: 161px;
   font-size: 16px;
 
   &::before {
@@ -144,8 +144,8 @@
   }
 
   .program__description {
-    margin-top: 16px;
     width: 380px;
+    margin-top: 16px;
     font-size: 16px;
     line-height: 24px;
 
@@ -216,8 +216,8 @@
   }
 
   .program__link {
-    padding-top: 3px;
     margin-top: 22px;
+    padding-top: 3px;
 
     &::after {
       top: 13px;

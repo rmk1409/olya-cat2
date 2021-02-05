@@ -1,11 +1,11 @@
 .promo {
   padding-top: 28px;
   padding-bottom: 19px;
+  color: $white;
+  text-align: center;
   background-image: url("../img/cat_green.png");
   background-repeat: no-repeat;
   background-size: auto;
-  color: $white;
-  text-align: center;
 }
 
 .promo__title {
@@ -39,8 +39,8 @@
   .promo {
     display: flex;
     flex-direction: column;
-    padding-left: 112px;
     padding-top: 34px;
+    padding-left: 112px;
     padding-bottom: 525px;
     text-align: start;
     color: $black;
@@ -49,8 +49,8 @@
   }
 
   .promo__title {
-    padding-left: 5px;
     width: 450px;
+    padding-left: 5px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -79,8 +79,8 @@
       position: relative;
       bottom: 65px;
       right: 41px;
-      display: block;
       order: 2;
+      display: block;
     }
   }
 }
@@ -95,19 +95,19 @@
       position: absolute;
       left: 558px;
       top: 13px;
-      display: block;
       order: 2;
       z-index: 1;
+      display: block;
     }
   }
 
   .promo {
-    padding-left: 185px;
-    padding-top: 96px;
-    padding-bottom: 185px;
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-left: 185px;
+    padding-top: 96px;
+    padding-bottom: 185px;
     background-image: none;
 
     &::after {
@@ -126,7 +126,7 @@
   }
 
   .promo__button {
-    margin-left: 4px;
     margin-top: 30px;
+    margin-left: 4px;
   }
 }

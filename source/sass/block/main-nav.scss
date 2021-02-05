@@ -19,9 +19,9 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    z-index: 1;
     margin-top: 6px;
     font-size: 20px;
-    z-index: 1;
   }
 
   .main-nav__list {

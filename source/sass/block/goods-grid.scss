@@ -1,8 +1,8 @@
 .goods-grid {
-  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid $gray-stroke-result;
 }
 
@@ -15,8 +15,8 @@
 
 @media (min-width: $desktop-width) {
   .goods-grid {
-    padding-bottom: 1px;
     gap: 0;
+    padding-bottom: 1px;
     border-bottom: 1px solid $gray-stroke-result;
   }
 }
