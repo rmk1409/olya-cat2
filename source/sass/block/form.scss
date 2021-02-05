@@ -18,7 +18,7 @@
     left: 144px;
     top: 16px;
     width: 100vw;
-    border: 2px solid #68b738;
+    border: 2px solid $green;
   }
 }
 
@@ -40,15 +40,15 @@
 .form__program {
   margin: 0 auto;
   margin-top: 14px;
-  padding: 25px 20px 20px;
-  border-top:  1px solid #E7E7E7;
-  border-bottom:  1px solid #E7E7E7;
+  padding: 28px 20px 20px;
+  border-top: 1px solid $gray-stroke;
+  border-bottom: 1px solid $gray-stroke;
 }
 
 .form__contact {
   max-width: 320px;
   margin: 0 auto;
-  margin-top: 26px;
+  margin-top: 29px;
   padding: 9px 20px;
 }
 
@@ -62,11 +62,11 @@
 .form__additional {
   max-width: 320px;
   margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 8px;
   padding: 9px 20px;
 }
 
-.form__button-grid  {
+.form__button-grid {
   max-width: 320px;
   margin: 0 auto;
   margin-top: 9px;
@@ -74,7 +74,7 @@
 }
 
 .form__button {
-  margin-top: 10px;
+  margin-top: 12px;
   width: 279px;
 }
 
@@ -88,11 +88,10 @@
   text-transform: none;
 }
 
-
 @media (min-width: $tablet-width) {
   .form {
     font-size: 20px;
-    line-height: 30px
+    line-height: 30px;
   }
 
   .form__legend {
@@ -105,7 +104,7 @@
       right: 220px;
       top: 22px;
       width: 100vw;
-      border: 2px solid #68b738;
+      border: 2px solid $green;
     }
 
     &::after {
@@ -144,7 +143,7 @@
     max-width: 768px;
     margin-top: 63px;
     padding: 28px 20px 23px 20px;
-    border: 1px solid #E7E7E7;
+    border: 1px solid $gray-stroke;
   }
 
   .form__contact {
@@ -193,7 +192,7 @@
     padding: 0;
   }
 
-  .form__program{
+  .form__program {
     margin: 0;
   }
 
@@ -220,11 +219,12 @@
     margin-top: 36px;
     padding: 10px 111px;
   }
+
   .form__button {
     width: 568px;
   }
 
-  .form__description{
+  .form__description {
     margin-top: 29px;
     margin-left: -350px;
   }

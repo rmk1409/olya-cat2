@@ -1,3 +1,5 @@
 .footer-section {
-  margin: 0 auto;
+  &--catalog {
+    background-color: $basic-gray;
+  }
 }

@@ -20,7 +20,7 @@
   margin: 0;
   font-size: 24px;
   line-height: 24px;
-  border: 2px solid #CDCDCD;
+  border: 2px solid $gray-stroke-result;
   border-radius: 4px;
   text-align: center;
 }
@@ -33,7 +33,7 @@
   margin: 8px auto -28px;
   width: 86px;
   padding: 1px 8px;
-  background-color: $basic-gray;
+  background-color: $gray-wrapper;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,9 +55,10 @@
     font-size: 30px;
   }
 
-  .stat__description  {
+  .stat__description {
     font-size: 14px;
     margin: 19px auto -28px;
+    background-color: $white;
 
     &--weight {
       width: 113px;
@@ -79,5 +80,9 @@
     grid-column-end: -2;
     margin-left: 0;
     text-align: start;
+  }
+
+  .stat__description {
+    background-color: $gray-wrapper;
   }
 }

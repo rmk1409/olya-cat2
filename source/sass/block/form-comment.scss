@@ -4,6 +4,15 @@
   margin-top: 32px;
   padding: 3px 15px 3px;
   resize: none;
+  border: 1px solid $gray-stroke-form;
+
+  &:hover {
+    border: 1px solid $gray-result-filter;
+  }
+
+  &:focus {
+    border: 2px solid $dark-gray;
+  }
 }
 
 .form-comment__textarea::placeholder {
@@ -12,6 +21,7 @@
   font-style: normal;
   font-size: 16px;
   text-transform: uppercase;
+  color: $dark-gray;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,8 +39,8 @@
 }
 
 @media (min-width: $desktop-width) {
-.form-comment__textarea {
-  width: 1220px;
-  padding: 10px 18px 20px;
-}
+  .form-comment__textarea {
+    width: 1220px;
+    padding: 10px 18px 20px;
+  }
 }

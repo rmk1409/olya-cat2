@@ -10,6 +10,19 @@
   margin-left: 7px;
   padding: 16px 10px 11px 13px;
   width: 202px;
+  border: 1px solid $gray-stroke-form;
+
+  &:hover {
+    border: 1px solid $gray-result-filter;
+  }
+
+  &:focus {
+    border: 2px solid $dark-gray;
+  }
+
+  &:invalid {
+    border: 2px solid $red-invalid;
+  }
 
   &::placeholder {
     font-family: "Oswald", "Roboto", sans-serif;
@@ -17,6 +30,7 @@
     font-style: normal;
     font-size: 16px;
     text-transform: uppercase;
+    color: $dark-gray;
   }
 }
 
@@ -26,6 +40,7 @@
 
 .form-contact__label {
   position: relative;
+  color: $dark-gray;
 }
 
 .form-contact__img-phone {
@@ -38,6 +53,22 @@
   position: absolute;
   top: 17px;
   right: 15px;
+}
+
+.form-contact__input-email:disabled + .form-contact__img-email {
+  fill: $green;
+}
+
+.form-contact__input-email:invalid + .form-contact__img-email {
+  fill: $red-invalid;
+}
+
+.form-contact__input-phone:disabled + .form-contact__img-phone {
+  fill: $green;
+}
+
+.form-contact__input-phone:invalid + .form-contact__img-phone {
+  fill: $red-invalid;
 }
 
 

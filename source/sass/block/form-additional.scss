@@ -1,13 +1,14 @@
 .form-additional__list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 25px;
   margin-top: 29px;
 }
 
 .form-additional__item {
   position: relative;
   padding-left: 46px;
+  color: $dark-gray;
 }
 
 .form-additional__input {
@@ -20,7 +21,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid $gray-stroke-result;
   background-color: $white;
 }
 
@@ -39,7 +40,7 @@
 }
 
 .form-additional__input:hover + .form-additional__checkbox {
-  border: 1px solid #BABABA;
+  border: 1px solid $gray-stroke-form-hover;
 }
 
 @media (min-width: $tablet-width) {

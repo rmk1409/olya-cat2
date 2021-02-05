@@ -4,10 +4,27 @@
   gap: 16px;
 }
 
+.form-common__label {
+  color: $dark-gray;
+}
+
 .form-common__input {
   margin-left: 10px;
   padding: 12px 10px 12px 13px;
   width: 170px;
+  border: 1px solid $gray-stroke-form;
+
+  &:hover {
+    border: 1px solid $gray-result-filter;
+  }
+
+  &:focus {
+    border: 2px solid $dark-gray;
+  }
+
+  &:invalid {
+    border: 2px solid $red-invalid;
+  }
 
   &::placeholder {
     font-family: "Oswald", "Roboto", sans-serif;
@@ -15,6 +32,7 @@
     font-style: normal;
     font-size: 16px;
     text-transform: uppercase;
+    color: $dark-gray;
   }
 
   &--name {
@@ -27,9 +45,8 @@
   }
 
   &--age {
-    margin-left: 6px;
+    margin-left: 12px;
   }
-
 }
 
 @media (min-width: $tablet-width) {
@@ -57,7 +74,7 @@
     }
 
     &--age {
-      margin-left: 5px;
+      margin-left: 11px;
     }
   }
 }

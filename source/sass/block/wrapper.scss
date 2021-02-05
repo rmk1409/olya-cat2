@@ -2,13 +2,17 @@
   background-color: $basic-gray;
 }
 
+.wrapper-result {
+  background: $gray-wrapper;
+}
+
 .wrapper-promo {
   background: linear-gradient(180deg, $green-wrapper 20px 305px, $white 305px);
 }
 
 @media (min-width: $tablet-width) {
   .wrapper-result {
-    background: linear-gradient(180deg, $white 20px 638px, $gray 638px);
+    background: linear-gradient(180deg, $white 20px 638px, $gray-wrapper 638px);
   }
 
   .wrapper-promo {
@@ -18,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .wrapper-result {
-    background: linear-gradient(180deg, $white 20px 203px, $gray 203px);
+    background: linear-gradient(180deg, $white 20px 203px, $gray-wrapper 203px);
   }
 
   .wrapper-promo {

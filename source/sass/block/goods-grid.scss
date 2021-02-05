@@ -3,9 +3,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  border-bottom: 1px solid #CDCDCD;
+  border-bottom: 1px solid $gray-stroke-result;
 }
-
 
 @media (min-width: $tablet-width) {
   .goods-grid {
@@ -18,6 +17,6 @@
   .goods-grid {
     padding-bottom: 1px;
     gap: 0;
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid $gray-stroke-result;
   }
 }

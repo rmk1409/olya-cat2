@@ -1,13 +1,9 @@
-.form-program {
-
-}
-
 .form-program__list {
   margin: 0 auto;
   max-width: 320px;
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 25px;
 }
 
 .form-program__item {
@@ -19,17 +15,18 @@
 }
 
 .form-program__label {
-  padding-left: 48px;
+  padding-left: 65px;
+  color: $dark-gray;
 }
 
 .form-program__radio {
   position: absolute;
-  top: -4px;
-  left: 2px;
+  top: -8px;
+  left: 21px;
   width: 30px;
   height: 30px;
   background-color: $white;
-  border: 1px solid #CDCDCD;
+  border: 1px solid $gray-stroke-form;
   border-radius: 50%;
 }
 
@@ -45,7 +42,7 @@
 }
 
 .form-program__input:hover + .form-program__radio {
-  border: 1px solid #BABABA;
+  border: 1px solid $gray-stroke-form-hover;
 }
 
 .form-program__input:disabled + .form-program__radio {
@@ -57,6 +54,10 @@
     margin-left: 90px;
     max-width: 555px;
     gap: 23px;
+  }
+
+  .form-program__label {
+    padding-left: 48px;
   }
 
   .form-program__radio {
@@ -71,7 +72,6 @@
     width: 18px;
     height: 18px;
   }
-
 }
 
 @media (min-width: $desktop-width) {

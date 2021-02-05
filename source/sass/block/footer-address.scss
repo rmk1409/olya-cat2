@@ -1,10 +1,14 @@
 .footer-address {
-  padding-top: 17px;
+  padding-top: 28px;
   padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
   gap: 16px;
   background-color: $white;
+
+  &--catalog {
+    background-color: $basic-gray;
+  }
 }
 
 .footer-address__title {
@@ -23,7 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .footer-address {
-    padding: 54px 45px 58px 41px;
+    padding: 65px 45px 58px 41px;
   }
 
   .footer-address__title {
@@ -46,6 +50,10 @@
     top: 96px;
     width: 570px;
     padding: 69px 89px 58px 75px;
+
+    &--catalog {
+      background-color: $white;
+    }
   }
 
   .footer-address__description {
