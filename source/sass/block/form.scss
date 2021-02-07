@@ -18,7 +18,7 @@
     left: 144px;
     top: 16px;
     width: 100vw;
-    border: 2px solid $green;
+    border: 1px solid $green;
   }
 }
 
@@ -30,9 +30,13 @@
   left: 163px;
 }
 
+.form__legend--additional-goods::after {
+  left: 201px;
+}
+
 .form__common {
   max-width: 320px;
-  margin: 33px auto 0;
+  margin: 28px auto 0;
   padding: 9px 20px;
 }
 
@@ -98,7 +102,7 @@
       right: 220px;
       top: 22px;
       width: 100vw;
-      border: 2px solid $green;
+      border: 1px solid $green;
     }
 
     &::after {
@@ -134,7 +138,7 @@
   }
 
   .form__program {
-    max-width: 768px;
+    max-width: 630px;
     margin-top: 63px;
     padding: 28px 20px 23px 20px;
     border: 1px solid $gray-stroke;
@@ -173,9 +177,10 @@
   }
 
   .form__description {
-    margin-top: 28px;
-    margin-left: -72px;
+    margin-top: 26px;
+    margin-left: 31px;
     font-size: 16px;
+    text-align: start;
   }
 }
 
@@ -218,7 +223,8 @@
   }
 
   .form__description {
-    margin-top: 29px;
-    margin-left: -350px;
+    margin-top: 28px;
+    margin-left: 40px;
+    text-align: start;
   }
 }

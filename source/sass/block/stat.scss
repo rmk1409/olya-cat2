@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.stat-cost {
+.stat__cost {
   display: flex;
   justify-content: center;
   grid-column-start: 1;
@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.stat-cost__description {
+.stat__cost-description {
   margin: 0;
 }
 
@@ -37,7 +37,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .stat-cost {
+  .stat__cost {
     flex-direction: column;
     width: 189px;
     margin-top: 1px;
@@ -71,7 +71,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .stat-cost {
+  .stat__cost {
     flex-direction: row;
     display: flex;
     justify-content: space-between;

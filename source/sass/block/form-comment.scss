@@ -3,6 +3,11 @@
   height: 151px;
   margin-top: 32px;
   padding: 3px 15px 3px;
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
   resize: none;
   border: 1px solid $gray-stroke-form;
 
@@ -11,16 +16,11 @@
   }
 
   &:focus {
-    border: 2px solid $dark-gray;
+    border: 1px solid $dark-gray;
   }
 }
 
 .form-comment__textarea::placeholder {
-  font-family: "Oswald", "Roboto", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  text-transform: uppercase;
   color: $dark-gray;
 }
 

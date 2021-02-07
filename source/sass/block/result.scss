@@ -16,8 +16,7 @@
 }
 
 .result__description {
-  margin: 0;
-  margin-top: 34px;
+  margin: 34px 0 0;
   font-family: "Arial", "Roboto", sans-serif;
   font-weight: normal;
   text-transform: none;
@@ -34,6 +33,15 @@
   background-color: transparent;
   outline: none;
   border: none;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: transparent;
+    color: $black;
+  }
 }
 
 .result__filter {
@@ -57,8 +65,7 @@
 @media (min-width: $tablet-width) {
   .result__description {
     width: 679px;
-    margin: 0;
-    margin-top: 65px;
+    margin: 65px 0 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -82,7 +89,16 @@
 
   .result__button {
     width: 56px;
-    border-bottom: 2px dotted $gray-stroke-result;
+    border-bottom: 2px dotted $dark-gray-result;
+
+    &:hover {
+      border-bottom: 2px solid $dark-gray-result;
+    }
+
+    &:active {
+      background-color: transparent;
+      border-bottom: 2px solid transparent;
+    }
   }
 
   .result__filter {
@@ -101,6 +117,7 @@
     margin-top: -11px;
     margin-left: 199px;
     background-color: $white;
+    border: 1px solid $gray-result-filter;
     border-radius: 50%;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
 
@@ -108,11 +125,20 @@
       position: absolute;
       content: "";
       top: 12px;
-      left: 13px;
+      left: 12px;
       width: 8px;
       height: 8px;
       background-color: $green;
       border-radius: 50%;
+    }
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      border: 1px solid $green;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
     }
   }
 }
@@ -147,8 +173,7 @@
 
   .result__img {
     grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row: 1/4;
     margin-top: 0;
   }
 }

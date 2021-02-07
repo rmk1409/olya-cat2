@@ -56,15 +56,19 @@ a {
   outline: none;
   border: none;
   cursor: pointer;
-}
 
-.button:hover {
-  background-color: $green-hover;
-}
+  &:focus {
+    outline: 1px solid $black;
+  }
 
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: $green-hover;
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $green-hover;
+  }
 }
 
 .title {

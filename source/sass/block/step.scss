@@ -8,10 +8,10 @@
 
 .step__description {
   margin: 0;
+}
 
-  &--br {
-    display: none;
-  }
+.step__description-br {
+  display: none;
 }
 
 .step__one {
@@ -251,7 +251,7 @@
     }
   }
 
-  .step__description--br {
+  .step__description-br {
     display: block;
   }
 }

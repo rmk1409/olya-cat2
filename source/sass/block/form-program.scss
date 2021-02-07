@@ -51,9 +51,9 @@
 
 @media (min-width: $tablet-width) {
   .form-program__list {
-    gap: 24px;
+    gap: 23px;
     max-width: 555px;
-    margin-left: 90px;
+    margin-left: 19px;
   }
 
   .form-program__label {
@@ -61,15 +61,15 @@
   }
 
   .form-program__radio {
-    top: -2px;
-    left: -13px;
+    top: -7px;
+    left: -11px;
     width: 40px;
     height: 40px;
   }
 
   .form-program__input:checked + .form-program__radio::before {
-    top: 9px;
-    left: 11px;
+    top: 10px;
+    left: 10px;
     width: 18px;
     height: 18px;
   }
