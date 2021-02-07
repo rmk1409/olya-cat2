@@ -1,0 +1,95 @@
+.form-additional__list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: 29px;
+}
+
+.form-additional__item {
+  position: relative;
+  padding-left: 46px;
+  color: $dark-gray;
+}
+
+.form-additional__input {
+  display: none;
+}
+
+.form-additional__checkbox {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $gray-stroke-result;
+  background-color: $white;
+}
+
+.form-additional__input:checked + .form-additional__checkbox::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon-tick.svg");
+}
+
+.form-additional__input:disabled + .form-additional__checkbox {
+  opacity: 0.3;
+}
+
+.form-additional__input:hover + .form-additional__checkbox {
+  border: 1px solid $gray-stroke-form-hover;
+}
+
+@media (min-width: $tablet-width) {
+  .form-additional__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+    row-gap: 42px;
+    margin-top: 46px;
+  }
+
+  .form-additional__item {
+    padding-left: 59px;
+  }
+
+  .form-additional__checkbox {
+    top: -4px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-additional__input:checked + .form-additional__checkbox::before {
+    top: 12px;
+    left: 10px;
+    width: 18px;
+    height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-additional__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 52px;
+  }
+
+  .form-additional__item {
+    &--water {
+      margin-left: 44px;
+    }
+
+    &--milk {
+      margin-left: 77px;
+    }
+
+    &--vitamins {
+      margin-left: 138px;
+    }
+  }
+}

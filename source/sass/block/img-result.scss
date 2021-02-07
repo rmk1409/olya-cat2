@@ -1,4 +1,43 @@
 .img-result__filter {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+}
+
+.img-result__before--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .img-result__before {
+    margin-top: 84px;
+    margin-left: 16px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  .img-result__filter {
+    display: flex;
+    justify-content: space-between;
+    width: 579px;
+    margin: 15px auto 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .img-result__before {
+    margin-top: 19px;
+    margin-left: 163px;
+  }
+
+  .img-result__filter {
+    margin-top: 77px;
+    margin-left: 210px;
+  }
 }

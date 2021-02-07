@@ -1,0 +1,10 @@
+@media (min-width: $desktop-width) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 76px;
+    width: 1440px;
+    margin: 45px auto 0;
+    padding: 20px 112px;
+  }
+}

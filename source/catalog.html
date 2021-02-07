@@ -232,7 +232,7 @@
           <button class="button card__button" type="button">Заказать</button>
         </article>
       </li>
-      <li class="cards__item">
+      <li class="cards__item cards__item--show">
         <section class="catalog__show-more show-more">
           <p class="show-more__title">Показать еще 100500 товаров</p>
           <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
@@ -241,47 +241,47 @@
       </li>
     </ul>
   </section>
-  <section class="additional-goods container">
+  <section class="additional-goods">
     <h2 class="additional-goods__title">Дополнительные товары</h2>
-    <div class="additional-goods__grid">
-      <ul class="reset-list">
+    <div class="additional-goods__grid container">
+      <ul class="goods-grid reset-list">
         <li class="goods">
           <h3 class="goods__title">Сахарозаменитель</h3>
           <div class="goods__info">
-              <p>1 упаковка(100 г)</p>
-              <p>200 Р.</p>
+              <p class="goods__info-text">1 упаковка(100 г)</p>
+              <p class="goods__info-text">200 Р.</p>
           </div>
           <button class="button goods__button" type="button">Заказать</button>
         </li>
         <li class="goods">
           <h3 class="goods__title">Питьевая вода</h3>
-          <div class="goods__info">
-              <p>5 литров</p>
-              <p>50 Р.</p>
+          <div class="goods__info goods__info--water">
+              <p class="goods__info-text">5 литров</p>
+              <p class="goods__info-text">50 Р.</p>
           </div>
           <button class="button goods__button" type="button">Заказать</button>
         </li>
         <li class="goods">
           <h3 class="goods__title">Молоко</h3>
-          <div class="goods__info">
-              <p>1 литр</p>
-              <p>100 Р.</p>
+          <div class="goods__info goods__info--milk">
+              <p class="goods__info-text">1 литр</p>
+              <p class="goods__info-text">100 Р.</p>
           </div>
           <button class="button goods__button" type="button">Заказать</button>
         </li>
         <li class="goods">
           <h3 class="goods__title">Витамины</h3>
           <div class="goods__info">
-              <p>1 упаковка(30 г)</p>
-              <p>300 Р.</p>
+              <p class="goods__info-text">1 упаковка(30 г)</p>
+              <p class="goods__info-text">300 Р.</p>
           </div>
           <button class="button goods__button" type="button">Заказать</button>
         </li>
       </ul>
       <section class="order-all">
         <p class="order-all__description">
-          Закажите все
-          и получите чехол для
+          Закажите все <br class="order-all__br">
+          и получите чехол для <br class="order-all__br-tablet">
           кота в подарок!
         </p>
       </section>
@@ -289,24 +289,21 @@
   </section>
 </main>
 <footer class="footer-page">
-  <section class="footer-section">
+  <section class="footer-section footer-section--catalog">
     <div class="container">
-      <div class="footer-address">
-        <h2 class="footer-address__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="footer-address__description">
-          ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург
-        </p>
-      </div>
+      <section class="footer-address footer-address--catalog">
+        <h2 class="footer-address__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+        <div class="footer-address__description address">
+          <p class="address__street">ул.Большая Конюшенная, д. 19/8</p>
+          <p class="address__city">Санкт-Петербург</p>
+        </div>
+      </section>
     </div>
     <div class="wrapper">
-      <div class="footer-map">
-        <img class="footer-map__img--mobile" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="footer-map__img--tablet" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="footer-map__img--desktop" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="footer-map__pin" src="img/map-pin.png" width="57" height="53" alt="Маркер">
-      </div>
+      <iframe class="footer-map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.1829946771286!2d30.3191572!3d59.9389204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sby!4v1611730354982!5m2!1sen!2sby"
+              width="100%" height="359" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
     </div>
   </section>
   <div class="wrapper">

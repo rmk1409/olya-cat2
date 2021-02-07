@@ -37,123 +37,131 @@
     </section>
   </nav>
 </header>
-<main class="form-page container">
-  <h1 class="title">Подбор программы</h1>
-  <p class="form-page__description">
-    Заполните анкету, и мы подберем
-    программу питания для вашего кота
-  </p>
+<main class="form-page">
+  <div class="container">
+    <h1 class="form-page__title title">Подбор программы</h1>
+    <p class="form-page__description">
+      Заполните анкету, и мы подберем
+      программу питания для вашего кота
+    </p>
+  </div>
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="form__grid">
-      <fieldset class="form__fieldset fieldset-reset">
-        <label class="form__element">
+    <div class="form-grid">
+      <fieldset class="form__common form-common fieldset-reset">
+        <label class="form-common__label">
           Имя:*
-          <input class="form__element--name" type="text" name="name" placeholder="Барсик" minlength="1">
+          <input class="form-common__input form-common__input--name" type="text" name="name" placeholder="Барсик" minlength="1">
         </label>
-        <label class="form__element">
+        <label class="form-common__label">
           Вес (кг):*
-          <input class="form__element--weight" type="number" name="weight" placeholder="7" minlength="1">
+          <input class="form-common__input form-common__input--weight" type="number" name="weight" placeholder="7" minlength="1">
         </label>
-        <label class="form__element">
-          Возраст (лет):*
-          <input class="form__element--age" type="number" name="age" placeholder="7" minlength="1">
+        <label class="form-common__label">
+          Возраст (лет):
+          <input class="form-common__input form-common__input--age" type="number" name="age" placeholder="7" minlength="1">
         </label>
       </fieldset>
-      <fieldset class="form__fieldset form-radio fieldset-reset">
-        <ul class="reset-list form-radio__list">
-          <li>
-            <label class="form__element">
-              <input type="radio" name="program" value="Weight loss" checked>
+      <fieldset class="form__program form-program fieldset-reset">
+        <ul class="reset-list form-program__list">
+          <li class="form-program__item">
+            <label class="form-program__label" for="program-1">
+              <input class="form-program__input" id="program-1" type="radio" name="program" value="Weight loss" checked>
               Похудение
+              <span class="form-program__radio" tabindex="0"></span>
             </label>
           </li>
-          <li>
-            <label class="form__element">
-              <input type="radio" name="program" value="Weight gain">
+          <li class="form-program__item">
+            <label class="form-program__label" for="program-2">
+              <input class="form-program__input" id="program-2" type="radio" name="program" value="Weight gain">
+              <span class="form-program__radio" tabindex="0"></span>
               Набор массы
             </label>
           </li>
-          <li>
-            <label class="form__element">
-              <input type="radio" name="program" value="Don't know">
+          <li class="form-program__item">
+            <label class="form-program__label" for="program-3">
+              <input class="form-program__input" id="program-3" type="radio" name="program" value="Don't know">
+              <span class="form-program__radio" tabindex="0"></span>
               Не знаю (Нужен ваш совет)
             </label>
           </li>
         </ul>
       </fieldset>
     </div>
-    <fieldset class="form__fieldset fieldset-reset">
-      <legend class="form__legend">Контактные данные (владельца кота)</legend>
-      <div class="form-grid__contact">
-        <label class="form__element">
+    <fieldset class="form__contact form-contact fieldset-reset">
+      <legend class="form__legend form__legend--contact">Контактные данные (владельца кота)</legend>
+      <div class="form-contact__grid">
+        <label class="form-contact__label">
           E-mail:*
-          <input class="form__element--email" type="email" name="email" placeholder="kuklachev@gmail.com">
+          <input class="form-contact__input form-contact__input-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+          <svg class="form-contact__img-email" width="20" height="15" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+          </svg>
         </label>
-        <label class="form__element form__phone">
+        <label class="form-contact__label">
           Телефон:*
-          <input class="form__element--phone" type="number" name="number" placeholder="8 (960) 900-60-90">
+          <input class="form-contact__input form-contact__input-phone" type="text" name="number" placeholder="8 (960) 900-60-90">
+          <svg class="form-contact__img-phone" width="20" height="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve"><path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+            <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7 c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6 C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4C7.8,20,8.1,19.7,8.1,19.4z"/>
+          </svg>
         </label>
       </div>
     </fieldset>
-    <fieldset class="form__fieldset fieldset-reset">
+    <fieldset class="form__comment form-comment fieldset-reset">
       <legend class="form__legend">Комментарий</legend>
       <label class="visually-hidden" for="write-to-us">Напишите комментарий</label>
-      <textarea class="form__element--textarea" id="write-to-us" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <textarea class="form-comment__textarea" id="write-to-us" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
-    <fieldset class="form__fieldset form-checkbox fieldset-reset">
-      <legend class="form__legend">Дополнительно</legend>
-      <ul class="form-checkbox__list reset-list">
-        <li>
-          <label class="form__element">
-            <input type="checkbox" name="sweetener" value="Sweetener" checked>
+    <fieldset class="form__additional form-additional fieldset-reset">
+      <legend class="form__legend form__legend--additional">Дополнительно</legend>
+      <ul class="form-additional__list reset-list">
+        <li class="form-additional__item form-additional__item--sugar">
+          <label class="form-additional__label">
+            <input class="form-additional__input" type="checkbox" name="sweetener" value="Sweetener" checked>
+            <span class="form-additional__checkbox" tabindex="0"></span>
             Сахарозаменитель
           </label>
         </li>
-        <li>
-          <label class="form__element">
-            <input type="checkbox" name="drinking-water" value="Drinking water">
+        <li class="form-additional__item form-additional__item--water">
+          <label class="form-additional__label">
+            <input class="form-additional__input" type="checkbox" name="drinking-water" value="Drinking water">
+            <span class="form-additional__checkbox" tabindex="0"></span>
             Питьевая вода
           </label>
         </li>
-        <li>
-          <label class="form__element">
-            <input type="checkbox" name="milk" value="Milk">
+        <li class="form-additional__item form-additional__item--milk">
+          <label class="form-additional__label">
+            <input class="form-additional__input" type="checkbox" name="milk" value="Milk">
+            <span class="form-additional__checkbox" tabindex="0"></span>
             Молоко
           </label>
         </li>
-        <li>
+        <li class="form-additional__item form-additional__item--vitamins">
           <label class="form__element">
-            <input type="checkbox" name="vitamins" value="Vitamins">
+            <input class="form-additional__input" type="checkbox" name="vitamins" value="Vitamins">
+            <span class="form-additional__checkbox" tabindex="0"></span>
             Витамины
           </label>
         </li>
       </ul>
     </fieldset>
-    <div class="form__button--grid">
+    <div class="form__button-grid">
       <button class="button form__button" type="submit">Отправить заявку</button>
-      <span class="form__description">* — Обязательные поля</span>
+      <p class="form__description">* — Обязательные поля</p>
     </div>
   </form>
 </main>
 <footer class="footer-page">
-  <section class="footer-section">
+  <section class="footer-section footer-section--catalog">
     <div class="container">
-      <div class="footer-address">
-        <h2 class="footer-address__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="footer-address__description">
-          ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург
-        </p>
-      </div>
+      <section class="footer-address footer-address--catalog">
+        <h2 class="footer-address__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+        <div class="footer-address__description address">
+          <p class="address__street">ул.Большая Конюшенная, д. 19/8</p>
+          <p class="address__city">Санкт-Петербург</p>
+        </div>
+      </section>
     </div>
     <div class="wrapper">
-      <div class="footer-map">
-        <img class="footer-map__img--mobile" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="footer-map__img--tablet" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="footer-map__img--desktop" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="footer-map__pin" src="img/map-pin.png" width="57" height="53" alt="Маркер">
-      </div>
+      <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.1829946771286!2d30.3191572!3d59.9389204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sby!4v1611730354982!5m2!1sen!2sby" width="100%" height="359" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </section>
   <div class="wrapper">
@@ -174,7 +182,8 @@
           <li>
             <a href="#">
               <svg class="social__list--insta" width="16" height="16" viewBox="0 0 16 16" fill="#666666" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.98438 0.0625C9.31771 0.0625 10.4062 0.078125 11.25 0.109375C11.9688 0.140625 12.6094 0.265625 13.1719 0.484375C13.7135 0.692708 14.1823 0.994792 14.5781 1.39062C14.974 1.78646 15.276 2.25521 15.4844 2.79687C15.7031 3.35937 15.8281 4 15.8594 4.71875C15.8906 5.5625 15.9062 6.65104 15.9062 7.98437C15.9062 9.31771 15.8906 10.4062 15.8594 11.25C15.8281 11.9687 15.7031 12.6094 15.4844 13.1719C15.276 13.7135 14.974 14.1823 14.5781 14.5781C14.1823 14.974 13.7135 15.276 13.1719 15.4844C12.6094 15.7031 11.9688 15.8281 11.25 15.8594C10.4062 15.8906 9.31771 15.9062 7.98438 15.9062C6.65104 15.9062 5.5625 15.8906 4.71875 15.8594C4 15.8281 3.35938 15.7031 2.79688 15.4844C2.25521 15.276 1.78646 14.974 1.39062 14.5781C0.994792 14.1823 0.692708 13.7135 0.484375 13.1719C0.265625 12.6094 0.140625 11.9687 0.109375 11.25C0.078125 10.4062 0.0625 9.31771 0.0625 7.98437C0.0625 6.65104 0.078125 5.5625 0.109375 4.71875C0.140625 4 0.265625 3.35937 0.484375 2.79687C0.692708 2.25521 0.994792 1.78646 1.39062 1.39062C1.78646 0.994792 2.25521 0.692708 2.79688 0.484375C3.35938 0.265625 4 0.140625 4.71875 0.109375C5.5625 0.078125 6.65104 0.0625 7.98438 0.0625ZM7.98438 1.09375C6.59896 1.09375 5.46875 1.10937 4.59375 1.14062C4.03125 1.16146 3.51042 1.26042 3.03125 1.4375C2.28125 1.75 1.75 2.28125 1.4375 3.03125C1.26042 3.51042 1.16146 4.03125 1.14062 4.59375C1.10938 5.46875 1.09375 6.59896 1.09375 7.98437C1.09375 9.36979 1.10938 10.5 1.14062 11.375C1.16146 11.9375 1.26042 12.4583 1.4375 12.9375C1.75 13.6875 2.28125 14.2187 3.03125 14.5312C3.51042 14.7083 4.03125 14.8073 4.59375 14.8281C5.46875 14.8594 6.59896 14.875 7.98438 14.875C9.36979 14.875 10.5 14.8594 11.375 14.8281C11.9375 14.8073 12.4583 14.7083 12.9375 14.5312C13.6875 14.2187 14.2188 13.6875 14.5312 12.9375C14.7083 12.4583 14.8073 11.9375 14.8281 11.375C14.8594 10.5 14.875 9.36979 14.875 7.98437C14.875 6.59896 14.8594 5.46875 14.8281 4.59375C14.8073 4.03125 14.7083 3.51042 14.5312 3.03125C14.2188 2.28125 13.6875 1.75 12.9375 1.4375C12.4583 1.26042 11.9375 1.16146 11.375 1.14062C10.5 1.10937 9.36979 1.09375 7.98438 1.09375ZM7.98438 11.1562C8.85938 11.1562 9.60677 10.8464 10.2266 10.2266C10.8464 9.60677 11.1562 8.85937 11.1562 7.98437C11.1562 7.10937 10.8464 6.36198 10.2266 5.74219C9.60677 5.1224 8.85938 4.8125 7.98438 4.8125C7.10938 4.8125 6.36198 5.1224 5.74219 5.74219C5.1224 6.36198 4.8125 7.10937 4.8125 7.98437C4.8125 8.85937 5.1224 9.60677 5.74219 10.2266C6.36198 10.8464 7.10938 11.1562 7.98438 11.1562ZM7.98438 3.92187C9.10938 3.92187 10.0677 4.31771 10.8594 5.10937C11.651 5.90104 12.0469 6.85937 12.0469 7.98437C12.0469 9.10937 11.651 10.0677 10.8594 10.8594C10.0677 11.651 9.10938 12.0469 7.98438 12.0469C6.85938 12.0469 5.90104 11.651 5.10938 10.8594C4.31771 10.0677 3.92188 9.10937 3.92188 7.98437C3.92188 6.85937 4.31771 5.90104 5.10938 5.10937C5.90104 4.31771 6.85938 3.92187 7.98438 3.92187ZM13.1719 3.76562C13.1719 4.02604 13.0781 4.2474 12.8906 4.42969C12.7031 4.61198 12.474 4.70312 12.2031 4.70312C11.9427 4.70312 11.7214 4.61198 11.5391 4.42969C11.3568 4.2474 11.2656 4.02604 11.2656 3.76562C11.2656 3.49479 11.3568 3.26562 11.5391 3.07812C11.7214 2.89062 11.9427 2.79687 12.2031 2.79687C12.4635 2.79687 12.6901 2.89323 12.8828 3.08594C13.0755 3.27865 13.1719 3.50521 13.1719 3.76562Z"/>
+                <path
+                  d="M7.98438 0.0625C9.31771 0.0625 10.4062 0.078125 11.25 0.109375C11.9688 0.140625 12.6094 0.265625 13.1719 0.484375C13.7135 0.692708 14.1823 0.994792 14.5781 1.39062C14.974 1.78646 15.276 2.25521 15.4844 2.79687C15.7031 3.35937 15.8281 4 15.8594 4.71875C15.8906 5.5625 15.9062 6.65104 15.9062 7.98437C15.9062 9.31771 15.8906 10.4062 15.8594 11.25C15.8281 11.9687 15.7031 12.6094 15.4844 13.1719C15.276 13.7135 14.974 14.1823 14.5781 14.5781C14.1823 14.974 13.7135 15.276 13.1719 15.4844C12.6094 15.7031 11.9688 15.8281 11.25 15.8594C10.4062 15.8906 9.31771 15.9062 7.98438 15.9062C6.65104 15.9062 5.5625 15.8906 4.71875 15.8594C4 15.8281 3.35938 15.7031 2.79688 15.4844C2.25521 15.276 1.78646 14.974 1.39062 14.5781C0.994792 14.1823 0.692708 13.7135 0.484375 13.1719C0.265625 12.6094 0.140625 11.9687 0.109375 11.25C0.078125 10.4062 0.0625 9.31771 0.0625 7.98437C0.0625 6.65104 0.078125 5.5625 0.109375 4.71875C0.140625 4 0.265625 3.35937 0.484375 2.79687C0.692708 2.25521 0.994792 1.78646 1.39062 1.39062C1.78646 0.994792 2.25521 0.692708 2.79688 0.484375C3.35938 0.265625 4 0.140625 4.71875 0.109375C5.5625 0.078125 6.65104 0.0625 7.98438 0.0625ZM7.98438 1.09375C6.59896 1.09375 5.46875 1.10937 4.59375 1.14062C4.03125 1.16146 3.51042 1.26042 3.03125 1.4375C2.28125 1.75 1.75 2.28125 1.4375 3.03125C1.26042 3.51042 1.16146 4.03125 1.14062 4.59375C1.10938 5.46875 1.09375 6.59896 1.09375 7.98437C1.09375 9.36979 1.10938 10.5 1.14062 11.375C1.16146 11.9375 1.26042 12.4583 1.4375 12.9375C1.75 13.6875 2.28125 14.2187 3.03125 14.5312C3.51042 14.7083 4.03125 14.8073 4.59375 14.8281C5.46875 14.8594 6.59896 14.875 7.98438 14.875C9.36979 14.875 10.5 14.8594 11.375 14.8281C11.9375 14.8073 12.4583 14.7083 12.9375 14.5312C13.6875 14.2187 14.2188 13.6875 14.5312 12.9375C14.7083 12.4583 14.8073 11.9375 14.8281 11.375C14.8594 10.5 14.875 9.36979 14.875 7.98437C14.875 6.59896 14.8594 5.46875 14.8281 4.59375C14.8073 4.03125 14.7083 3.51042 14.5312 3.03125C14.2188 2.28125 13.6875 1.75 12.9375 1.4375C12.4583 1.26042 11.9375 1.16146 11.375 1.14062C10.5 1.10937 9.36979 1.09375 7.98438 1.09375ZM7.98438 11.1562C8.85938 11.1562 9.60677 10.8464 10.2266 10.2266C10.8464 9.60677 11.1562 8.85937 11.1562 7.98437C11.1562 7.10937 10.8464 6.36198 10.2266 5.74219C9.60677 5.1224 8.85938 4.8125 7.98438 4.8125C7.10938 4.8125 6.36198 5.1224 5.74219 5.74219C5.1224 6.36198 4.8125 7.10937 4.8125 7.98437C4.8125 8.85937 5.1224 9.60677 5.74219 10.2266C6.36198 10.8464 7.10938 11.1562 7.98438 11.1562ZM7.98438 3.92187C9.10938 3.92187 10.0677 4.31771 10.8594 5.10937C11.651 5.90104 12.0469 6.85937 12.0469 7.98437C12.0469 9.10937 11.651 10.0677 10.8594 10.8594C10.0677 11.651 9.10938 12.0469 7.98438 12.0469C6.85938 12.0469 5.90104 11.651 5.10938 10.8594C4.31771 10.0677 3.92188 9.10937 3.92188 7.98437C3.92188 6.85937 4.31771 5.90104 5.10938 5.10937C5.90104 4.31771 6.85938 3.92187 7.98438 3.92187ZM13.1719 3.76562C13.1719 4.02604 13.0781 4.2474 12.8906 4.42969C12.7031 4.61198 12.474 4.70312 12.2031 4.70312C11.9427 4.70312 11.7214 4.61198 11.5391 4.42969C11.3568 4.2474 11.2656 4.02604 11.2656 3.76562C11.2656 3.49479 11.3568 3.26562 11.5391 3.07812C11.7214 2.89062 11.9427 2.79687 12.2031 2.79687C12.4635 2.79687 12.6901 2.89323 12.8828 3.08594C13.0755 3.27865 13.1719 3.50521 13.1719 3.76562Z"/>
               </svg>
             </a>
           </li>

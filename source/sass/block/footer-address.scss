@@ -1,15 +1,20 @@
 .footer-address {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  padding: 10px 20px;
+  gap: 16px;
+  padding-top: 28px;
+  padding-bottom: 26px;
   background-color: $white;
-  outline: 3px solid darkgoldenrod;
-  outline-offset: 2px;
+
+  &--catalog {
+    background-color: $basic-gray;
+  }
 }
 
 .footer-address__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: normal;
 }
 
@@ -21,13 +26,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer-address {
+    padding: 65px 45px 58px 41px;
+  }
+
   .footer-address__title {
     width: 200px;
+    font-size: 20px;
+    line-height: 23px;
   }
 
   .footer-address__description {
-    text-align: end;
     width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
   }
 }
 
@@ -35,7 +48,15 @@
   .footer-address {
     position: absolute;
     top: 96px;
-    width: 399px;
-    padding: 20px 76px;
+    width: 570px;
+    padding: 69px 89px 58px 75px;
+
+    &--catalog {
+      background-color: $white;
+    }
+  }
+
+  .footer-address__description {
+    text-align: start;
   }
 }

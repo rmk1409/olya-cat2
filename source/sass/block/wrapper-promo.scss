@@ -1,0 +1,15 @@
+.wrapper-promo {
+  background-image: linear-gradient(180deg, $green-wrapper 20px 305px, $white 305px);
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper-promo {
+    background: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper-promo {
+    background-image: linear-gradient(90deg, $white 46% 50%, #64a83b 49%);
+  }
+}

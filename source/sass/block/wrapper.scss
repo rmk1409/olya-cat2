@@ -1,31 +1,3 @@
 .wrapper {
   background-color: $basic-gray;
 }
-
-.wrapper-promo {
-  background: linear-gradient(180deg, $green-wrapper 20px 305px, $white 305px);
-}
-
-@media (min-width: $tablet-width) {
-  .wrapper-result {
-    background: linear-gradient(180deg, $white 20px 350px, $gray 350px);
-  }
-
-  .wrapper-promo {
-    background: transparent;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .wrapper-result {
-    background: linear-gradient(180deg, $white 20px 150px, $gray 150px);
-  }
-
-  .wrapper-promo {
-    background: linear-gradient(90deg, $white 46% 50%, #64a83b 49%);
-  }
-
-  .wrapper__header {
-    background: linear-gradient(90deg, $white 46% 50%, #64a83b 49%);
-  }
-}

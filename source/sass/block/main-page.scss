@@ -1,17 +1,19 @@
 .main-page {
-  padding-top: 25px;
-  padding-bottom: 25px;
   display: block;
+  padding-top: 25px;
+  padding-bottom: 33px;
 }
 
 @media (min-width: $tablet-width) {
   .main-page {
     padding-top: 35px;
+    padding-bottom: 76px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-page {
     padding-top: 61px;
+    padding-bottom: 84px;
   }
 }

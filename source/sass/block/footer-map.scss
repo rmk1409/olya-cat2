@@ -2,33 +2,8 @@
   background-color: $gray;
 }
 
-.footer-map__img {
-  &--tablet,
-  &--descktop {
-    display: none;
-  }
-}
-
 @media (min-width: $tablet-width) {
-  .footer-map__img {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .footer-map__img {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+  .footer-map {
+    height: 400px;
   }
 }

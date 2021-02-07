@@ -1,10 +1,45 @@
 .form-page {
-  padding-top: 20px;
-  padding-bottom: 35px;
-  margin-top: 20px;
-  outline: 3px solid salmon;
+  padding-top: 25px;
+  padding-bottom: 6px;
 }
 
 .form-page__description {
-  margin-top: 37px;
+  width: 250px;
+  margin: 35px 0 0;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page {
+    padding-bottom: 63px;
+  }
+
+  .form-page__title {
+    margin-top: 10px;
+    margin-left: 39px;
+  }
+
+  .form-page__description {
+    width: 367px;
+    margin-top: 54px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__title {
+    margin-top: 36px;
+    margin-left: 0;
+  }
+
+  .form-page__description {
+    margin-top: 57px;
+    margin-left: 0;
+  }
+
+  .form-page {
+    padding-bottom: 69px;
+  }
 }

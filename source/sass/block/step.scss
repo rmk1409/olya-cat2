@@ -8,10 +8,10 @@
 
 .step__description {
   margin: 0;
+}
 
-  &--br {
-    display: none;
-  }
+.step__description-br {
+  display: none;
 }
 
 .step__one {
@@ -116,9 +116,9 @@
 
 @media (min-width: $tablet-width) {
   .step {
+    width: 261px;
     padding-left: 0;
     padding-top: 146px;
-    width: 261px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -251,7 +251,7 @@
     }
   }
 
-  .step__description--br {
+  .step__description-br {
     display: block;
   }
 }

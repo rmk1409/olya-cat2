@@ -7,7 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="wrapper__header">
+<header class="wrapper-header">
   <nav class="nav nav--closed nav--nojs">
     <section class="header-nav">
       <a class="header-nav__link" href="#">
@@ -15,7 +15,7 @@
         <img class="header-nav__logo--tablet" src="img/logo-tablet.svg" width="174" height="51" alt="Кэт Энерджи">
         <img class="header-nav__logo--desktop" src="img/logo-desktop.svg" width="202" height="59" alt="Кэт Энерджи">
       </a>
-      <a class="header-nav__link"  href="#">
+      <a class="header-nav__link" href="#">
         <img class="header-nav__logo--text" src="img/index/logo.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
       <button class="header-nav__toggle" type="button">
@@ -114,16 +114,16 @@
         <p class="step__description">
           Уже через месяц
           наслаждайтесь изменениями
-          к лучшему <br class="step__description--br">  вашего питомца!
+          к лучшему <br class="step__description-br"> вашего питомца!
         </p>
         <div class="step__four-number"></div>
       </li>
     </ol>
   </section>
-  <div class="wrapper wrapper-result">
+  <div class="wrapper-result">
     <section class="result container">
-      <h2 class="title">Живой пример</h2>
       <div class="result__grid">
+        <h2 class="title result__title">Живой пример</h2>
         <p class="result__description">
           Борис сбросил 5 кг за 2 месяца, просто
           заменив свой обычный корм на Cat Energy
@@ -132,29 +132,34 @@
           привычек и по-прежнему спит по 16 часов
           в день.
         </p>
-        <div class="result__stats">
-          <div class="stat">
-            <p class="stat__number">5 кг</p>
-            <p class="stat__description">снижение веса</p>
+        <div class="result__stats stat">
+          <div class="stat__number">5 кг
+            <p class="stat__description stat__description--weight ">снижение веса</p>
           </div>
-          <div class="stat">
-            <p class="stat__number">60 дней</p>
-            <p class="stat__description">затрачено времени</p>
+          <div class="stat__number">60 дней
+            <p class="stat__description stat__description--time">затрачено времени</p>
           </div>
-          <p class="stat-cost">Затраты на питание: 15 000 РУБ.</p>
+          <div class="stat__cost">
+            <p  class="stat__cost-description"> Затраты на питание:</p>
+            <p  class="stat__cost-description"> 15 000 РУБ.</p>
+          </div>
         </div>
         <section class="result__img img-result">
           <ul class="reset-list">
             <li class="img-result__before">
-              <img src="img/index/before-mobile.png" width="311" height="232" alt="Образ кода до употребления Кэт Энерджи">
+              <img class="img-result__before--mobile" src="img/index/before-mobile.png" width="311" height="232" alt="Образ кода до употребления Кэт Энерджи">
+              <img class="img-result__before--tablet" src="img/before-tablet@1x.png" width="690" height="517" alt="Образ кода до употребления Кэт Энерджи">
             </li>
             <li class="img-result__after visually-hidden">
-              <img src="img/index/after-mobile.png" width="251" height="240" alt="Образ кода после употребления Кэт Энерджи">
+              <img class="img-result__after--mobile" src="img/index/after-mobile.png" width="251" height="240" alt="Образ кода после употребления Кэт Энерджи">
+              <img class="img-result__after--tablet" src="img/after-tablet@1x.png" width="690" height="517" alt="Образ кода до употребления Кэт Энерджи">
             </li>
           </ul>
           <div class="img-result__filter">
             <button class="button result__button" type="button">Было</button>
-            <input type="range" min="1" max="10" step="1">
+            <div class="result__filter">
+              <div class="result__scale" tabindex="0"></div>
+            </div>
             <button class="button result__button" type="button">Стало</button>
           </div>
         </section>
@@ -165,22 +170,16 @@
 <footer class="footer-page">
   <section class="footer-section">
     <div class="container">
-      <div class="footer-address">
-        <h2 class="footer-address__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="footer-address__description">
-          ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург
-        </p>
-      </div>
+      <section class="footer-address">
+        <h2 class="footer-address__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+        <div class="footer-address__description address">
+          <p class="address__street">ул.Большая Конюшенная, д. 19/8</p>
+          <p class="address__city">Санкт-Петербург</p>
+        </div>
+      </section>
     </div>
     <div class="wrapper">
-      <div class="footer-map">
-        <img class="footer-map__img--mobile" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="footer-map__img--tablet" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="footer-map__img--desktop" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Изображение карты ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="footer-map__pin" src="img/map-pin.png" width="57" height="53" alt="Маркер">
-      </div>
+      <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.1829946771286!2d30.3191572!3d59.9389204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sby!4v1611730354982!5m2!1sen!2sby" width="100%" height="359" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </section>
   <div class="wrapper">

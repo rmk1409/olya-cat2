@@ -1,85 +1,230 @@
-.form__fieldset {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
-  padding: 20px 0;
-  outline: 3px solid darkgoldenrod;
-  outline-offset: 2px;
-}
-
-.form__element--email[placeholder],
-.form__element--phone[placeholder],
-.form__element--name[placeholder],
-.form__element--weight[placeholder],
-.form__element--age[placeholder],
-.form__element--textarea[placeholder],
-.form__fieldset {
-  font-family: "Oswald", "Roboto", sans-serif;
-  font-weight: normal;
+.form {
+  overflow: hidden;
   font-size: 16px;
   line-height: 18px;
-  color: $dark-gray;
-  text-transform: uppercase;
-}
-
-.form__element {
-  margin-top: 10px;
 }
 
 .form__legend {
-  margin-top: 10px;
+  position: relative;
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 144px;
+    top: 16px;
+    width: 100vw;
+    border: 1px solid $green;
+  }
 }
 
-.form__button--grid {
-  display: flex;
-  flex-direction: column;
+.form__legend--contact::after {
+  left: 201px;
+}
+
+.form__legend--additional::after {
+  left: 163px;
+}
+
+.form__legend--additional-goods::after {
+  left: 201px;
+}
+
+.form__common {
+  max-width: 320px;
+  margin: 28px auto 0;
+  padding: 9px 20px;
+}
+
+.form__program {
+  margin: 14px auto 0;
+  padding: 28px 20px 20px;
+  border-top: 1px solid $gray-stroke;
+  border-bottom: 1px solid $gray-stroke;
+}
+
+.form__contact {
+  max-width: 320px;
+  margin: 29px auto 0;
+  padding: 9px 20px;
+}
+
+.form__comment {
+  max-width: 320px;
+  margin: 16px auto 0;
+  padding: 9px 20px;
+}
+
+.form__additional {
+  max-width: 320px;
+  margin: 8px auto 0;
+  padding: 9px 20px;
+}
+
+.form__button-grid {
+  max-width: 320px;
+  margin: 9px auto 0;
+  padding: 9px 20px;
+}
+
+.form__button {
+  width: 279px;
+  margin-top: 12px;
 }
 
 .form__description {
   display: block;
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 19px;
   font-family: "Arial", "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
   text-transform: none;
 }
 
-.form__button {
-  margin-top: 10px;
-  width: 279px;
-}
-
-.form-grid__contact {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (min-width: $tablet-width) {
-  .form__button--grid {
-    flex-direction: row;
-    align-items: center;
+  .form {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__legend {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: 220px;
+      top: 22px;
+      width: 100vw;
+      border: 1px solid $green;
+    }
+
+    &::after {
+      top: 22px;
+      left: 220px;
+    }
+  }
+
+  .form__legend--contact {
+    &::before {
+      right: 550px;
+    }
+
+    &::after {
+      left: 555px;
+    }
+  }
+
+  .form__legend--additional {
+    &::before {
+      right: 248px;
+    }
+
+    &::after {
+      left: 252px;
+    }
+  }
+
+  .form__common {
+    max-width: 768px;
+    margin-top: 57px;
+    padding: 10px 70px;
+  }
+
+  .form__program {
+    max-width: 630px;
+    margin-top: 63px;
+    padding: 28px 20px 23px 20px;
+    border: 1px solid $gray-stroke;
+  }
+
+  .form__contact {
+    max-width: 768px;
+    margin-top: 81px;
+    padding: 10px 68px;
+  }
+
+  .form__comment {
+    max-width: 768px;
+    margin-top: 55px;
+    padding: 10px 68px;
+  }
+
+  .form__additional {
+    max-width: 768px;
+    margin-top: 50px;
+    padding: 16px 70px;
+  }
+
+  .form__button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 768px;
+    margin: 22px auto 0;
+    padding: 10px 71px;
+  }
+
+  .form__button {
+    width: 283px;
+    margin-top: 10px;
+    padding: 11px 26px;
   }
 
   .form__description {
-    margin-left: 70px;
+    margin-top: 26px;
+    margin-left: 31px;
+    font-size: 16px;
+    text-align: start;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .form__common {
+    margin: 0;
+    padding: 0;
   }
 
-  .form-grid__contact {
-    flex-direction: row;
-    justify-content: start;
+  .form__program {
+    margin: 0;
   }
 
-  .form__phone {
-    margin-left: 50px;
+  .form__contact {
+    max-width: 1440px;
+    margin-top: 50px;
+    padding: 10px 110px;
+  }
+
+  .form__comment {
+    max-width: 1440px;
+    margin-top: 59px;
+    padding: 10px 110px;
+  }
+
+  .form__additional {
+    max-width: 1440px;
+    margin-top: 52px;
+    padding: 10px 110px;
+  }
+
+  .form__button-grid {
+    max-width: 1440px;
+    margin-top: 36px;
+    padding: 10px 111px;
+  }
+
+  .form__button {
+    width: 568px;
+  }
+
+  .form__description {
+    margin-top: 28px;
+    margin-left: 40px;
+    text-align: start;
   }
 }
