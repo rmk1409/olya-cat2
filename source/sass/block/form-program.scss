@@ -33,8 +33,8 @@
 .form-program__input:checked + .form-program__radio::before {
   position: absolute;
   content: "";
-  top: 6px;
-  left: 6px;
+  top: 7px;
+  left: 7px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -51,7 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .form-program__list {
-    gap: 23px;
+    gap: 24px;
     max-width: 555px;
     margin-left: 90px;
   }
@@ -61,6 +61,7 @@
   }
 
   .form-program__radio {
+    top: -2px;
     left: -13px;
     width: 40px;
     height: 40px;
@@ -76,7 +77,12 @@
 
 @media (min-width: $desktop-width) {
   .form-program__list {
+    gap: 23px;
     margin-top: 1px;
     margin-left: 21px;
+  }
+
+  .form-program__radio {
+    top: -4px;
   }
 }

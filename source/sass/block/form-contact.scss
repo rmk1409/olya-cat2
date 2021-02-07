@@ -2,7 +2,7 @@
 .form-contact__grid {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
   margin-top: 25px;
 }
 
@@ -45,7 +45,7 @@
 
 .form-contact__img-phone {
   position: absolute;
-  top: 17px;
+  top: 14px;
   right: 15px;
 }
 
@@ -74,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .form-contact__grid {
-    gap: 21px;
+    gap: 24px;
     margin-top: 67px;
     margin-left: 1px;
   }

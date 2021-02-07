@@ -1,7 +1,7 @@
 .form-common {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 19px;
 }
 
 .form-common__label {
@@ -51,7 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .form-common {
-    gap: 21px;
+    gap: 23px;
   }
 
   .form-common__input {
@@ -80,6 +80,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-common {
+    gap: 24px;
+  }
+
   .form-common__input {
     width: 436px;
     padding: 20px 10px 12px 20px;
