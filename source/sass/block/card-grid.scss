@@ -30,6 +30,17 @@
 
 
 @media (min-width: $tablet-width) {
+  .card-grid__img {
+    position: relative;
+    margin-top: 22px;
+    margin-bottom: 11px;
+
+    &--small {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+  }
+
   .card-grid {
     display: flex;
     flex-direction: column;
@@ -67,5 +78,19 @@
 
   .card-grid {
     gap: 6px;
+  }
+
+  .card-grid__info {
+    margin-top: 11px;
+  }
+
+  .card-grid__img {
+    margin-top: 13px;
+    margin-bottom: 21px;
+
+    &--small {
+      margin-top: 42px;
+      margin-bottom: 27px;
+    }
   }
 }

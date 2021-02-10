@@ -1,9 +1,83 @@
 .footer-map {
+  position: relative;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 38%;
+    left: 42%;
+    width: 57px;
+    height: 53px;
+    background-image: url("../img/pin-m1x.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px auto;
+
+    &::before {
+      background-image: url("../img/pin-m2x.png");
+      background-size: 57px auto;
+    }
+  }
+}
+
+.footer-map__iframe {
   background-color: $gray;
+}
+
+.footer-map__pin {
+  position: absolute;
 }
 
 @media (min-width: $tablet-width) {
   .footer-map {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 36%;
+      left: 43%;
+      width: 113px;
+      height: 106px;
+      background-image: url("../img/pin-t1x.png");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 768px auto;
+
+      &::before {
+        background-image: url("../img/pin-t2x.png");
+        background-size: 113px auto;
+      }
+    }
+  }
+
+  .footer-map__iframe {
     height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+
+    &::before {
+      top: 33%;
+      left: 61%;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 1440px auto;
+    }
   }
 }

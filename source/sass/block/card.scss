@@ -14,8 +14,6 @@
 }
 
 .card__img {
-  width: 140px;
-  height: 112px;
   background-color: $basic-gray;
 }
 
@@ -39,12 +37,12 @@
     width: 157px;
     margin: 0 auto;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 23px;
   }
 
   .card__img {
-    width: 208px;
-    height: 229px;
+    width: 324px;
+    background-color: transparent;
   }
 
   .card__button {
@@ -56,12 +54,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .card__img {
+    width: 245px;
+  }
+
   .card__button {
     width: 168px;
-    margin-top: 26px;
+    margin-top: 22px;
   }
 
   .card__info {
-    width: 168px;
+    width: 172px;
   }
 }
