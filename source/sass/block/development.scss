@@ -5,11 +5,9 @@
   padding: 13px 9px;
 }
 
-.development__link:active {
-  opacity: 0.3;
-}
+.development__link {
+  fill: $dark-gray;
 
-.development__link-logo {
   &:hover {
     fill: $green;
   }

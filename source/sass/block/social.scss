@@ -4,9 +4,19 @@
   align-items: center;
   width: 128px;
 
+  &--vk,
+  &--insta {
+    fill: $dark-gray;
+  }
+
   &--vk:hover,
   &--insta:hover {
     fill: $green;
+  }
+
+  &--fb {
+    stroke: $dark-gray;
+    fill: transparent;
   }
 
   &--fb:hover {
