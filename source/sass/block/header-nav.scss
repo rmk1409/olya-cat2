@@ -12,11 +12,6 @@
     margin-top: 3px;
     margin-right: 5px;
   }
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .header-nav__link {
@@ -108,29 +103,16 @@
   }
 
   .header-nav__logo {
-    &--tablet {
-      display: block;
-      margin-top: 4px;
-      margin-left: -5px;
-    }
-
-    &--text,
-    &--mobile {
-      display: none;
-    }
+    width: 174px;
+    margin-top: 4px;
+    margin-left: -5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header-nav__logo {
-    &--desktop {
-      display: block;
-      margin-top: 1px;
-      margin-left: -5px;
-    }
-
-    &--tablet {
-      display: none;
-    }
+    width: 202px;
+    margin-top: 1px;
+    margin-left: -5px;
   }
 }

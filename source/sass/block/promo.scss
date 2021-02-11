@@ -3,9 +3,14 @@
   padding-bottom: 19px;
   color: $white;
   text-align: center;
-  background-image: url("../img/cat_green.png");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 320px auto;;
+  background-position: 6px -4px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__title {
@@ -21,14 +26,7 @@
 }
 
 .promo__img {
-  &--mobile {
-    margin-top: 10px;
-  }
-
-  &--desktop,
-  &--tablet {
-    display: none;
-  }
+  margin-top: 9px;
 }
 
 .promo__button {
@@ -39,13 +37,19 @@
   .promo {
     display: flex;
     flex-direction: column;
-    padding-top: 34px;
+    padding-top: 29px;
     padding-left: 112px;
     padding-bottom: 525px;
     text-align: start;
     color: $black;
     background-position: 29px 235px;
-    background-image: url("../img/index-can-tablet1.png");
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-size: 708px auto;
+    background-position-y: 231px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-tablet@1x.jpg");
+    }
   }
 
   .promo__title {
@@ -71,54 +75,28 @@
   }
 
   .promo__img {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      position: relative;
-      bottom: 65px;
-      right: 41px;
-      order: 2;
-      display: block;
-    }
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__img {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      position: absolute;
-      left: 558px;
-      top: 13px;
-      order: 2;
-      z-index: 1;
-      display: block;
-    }
+    position: absolute;
+    left: 557px;
+    top: 1px;
+    order: 2;
+    z-index: 1;
+    display: block;
+    width: 551px;
   }
 
   .promo {
-    position: relative;
     display: flex;
     flex-direction: column;
     padding-left: 185px;
-    padding-top: 96px;
-    padding-bottom: 185px;
+    padding-top: 93px;
+    padding-bottom: 188px;
     background-image: none;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: -130px;
-      right: 0;
-      width: 720px;
-      height: 696px;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-    }
   }
 
   .promo__slogan {

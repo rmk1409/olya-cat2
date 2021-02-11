@@ -3,3 +3,14 @@
     background-color: $basic-gray;
   }
 }
+
+.footer-section__img {
+  position: absolute;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-map {
+    height: 400px;
+  }
+}

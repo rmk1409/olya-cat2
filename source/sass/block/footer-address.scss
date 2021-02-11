@@ -46,6 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .footer-address {
+    z-index: 1;
     position: absolute;
     top: 96px;
     width: 570px;
