@@ -1,6 +1,7 @@
 .footer-map {
   position: relative;
   background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: 320px auto;
   background-repeat: no-repeat;
 
   &::before {
@@ -10,17 +11,16 @@
     left: 42%;
     width: 57px;
     height: 53px;
-    background-image: url("../img/pin-m1x.png");
+    background-image: url("../img/pin-mobile@1x.png");
     background-repeat: no-repeat;
+    background-size: 57px auto;
   }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
-    background-size: 320px auto;
 
     &::before {
-      background-image: url("../img/pin-m2x.png");
-      background-size: 57px auto;
+      background-image: url("../img/pin-mobile@2x.png");
     }
   }
 }
@@ -37,6 +37,7 @@
   .footer-map {
     background-image: url("../img/bg-map-tablet@1x.png");
     background-repeat: no-repeat;
+    background-size: 768px auto;
 
     &::before {
       position: absolute;
@@ -45,17 +46,16 @@
       left: 43%;
       width: 113px;
       height: 106px;
-      background-image: url("../img/pin-t1x.png");
+      background-image: url("../img/pin-tablet@1x.png");
       background-repeat: no-repeat;
+      background-size: 113px auto;
     }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-map-tablet@2x.png");
-      background-size: 768px auto;
 
       &::before {
-        background-image: url("../img/pin-t2x.png");
-        background-size: 113px auto;
+        background-image: url("../img/pin-tablet@2x.png");
       }
     }
   }
@@ -69,6 +69,7 @@
   .footer-map {
     background-image: url("../img/bg-map-desktop@1x.png");
     background-repeat: no-repeat;
+    background-size: 1440px auto;
 
     &::before {
       top: 33%;
@@ -77,7 +78,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
-      background-size: 1440px auto;
     }
   }
 }

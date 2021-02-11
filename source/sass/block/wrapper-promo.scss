@@ -10,6 +10,24 @@
 
 @media (min-width: $desktop-width) {
   .wrapper-promo {
+    position: relative;
     background-image: linear-gradient(90deg, $white 46% 50%, #64a83b 49%);
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -7px;
+      right: 0;
+      width: 872px;
+      height: 750px;
+      background-image: url("../img/index-background-desktop@1x.png");
+      background-size: 1045px auto;
+      background-repeat: no-repeat;
+      background-position: 151px 44px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.png");
+      }
+    }
   }
 }
