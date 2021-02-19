@@ -2341,12 +2341,13 @@ a {
   padding: 13px 9px; }
 
 .development__link {
+  margin-top: 6px;
   fill: #444444; }
   .development__link:hover {
     fill: #68b738; }
   .development__link:active {
     fill: #68b738;
-    opacity: 0.3; }
+    opacity: 0.6; }
 
 .development__title {
   margin: 13px 0 0;
@@ -2355,9 +2356,6 @@ a {
   font-size: 16px;
   line-height: 18px;
   text-transform: none; }
-
-.development__link {
-  margin-top: 6px; }
 
 @media (min-width: 768px) {
   .development {
