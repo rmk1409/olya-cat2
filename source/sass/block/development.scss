@@ -6,6 +6,7 @@
 }
 
 .development__link {
+  margin-top: 6px;
   fill: $dark-gray;
 
   &:hover {
@@ -14,7 +15,7 @@
 
   &:active {
     fill: $green;
-    opacity: 0.3;
+    opacity: 0.6;
   }
 }
 
@@ -26,11 +27,6 @@
   line-height: 18px;
   text-transform: none;
 }
-
-.development__link {
-  margin-top: 6px;
-}
-
 
 @media (min-width: $tablet-width) {
   .development {
