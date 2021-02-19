@@ -10,7 +10,9 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-const del = require("del")
+const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const minify = require("gulp-minify");
 
 const cleanBuildFolder = () => {
   return del("build");
@@ -44,16 +46,6 @@ const copyCssToBuild = () => {
     .pipe(gulpfile.dest("build"));
 }
 
-const copyJsToBuild = () => {
-  return gulpfile.src([
-    "source/js/**"
-  ], {
-    base: "source"
-  })
-    .pipe(gulpfile.dest("build"));
-}
-
-
 const makeCssFromSass = () => {
   return gulpfile.src("source/sass/style.scss")
     .pipe(plumber())
@@ -64,6 +56,13 @@ const makeCssFromSass = () => {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulpfile.dest("source/css"))
+    .pipe(sync.stream());
+}
+
+const minifyHtml = () => {
+  return gulpfile.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulpfile.dest("build"))
     .pipe(sync.stream());
 }
 
@@ -80,6 +79,12 @@ const makeMinifiedCssFromSass = () => {
     .pipe(sourcemap.write("."))
     .pipe(gulpfile.dest("build/css"))
     .pipe(sync.stream());
+}
+
+const minifyJs = () => {
+  return gulpfile.src("source/js/**/*.js")
+    .pipe(minify())
+    .pipe(gulpfile.dest("build/js"));
 }
 
 const makeSvgSprite = () => {
@@ -110,9 +115,10 @@ const build = gulpfile.series(
   copyFontsAndImagesToBuild,
   copyHtmlToBuild,
   copyCssToBuild,
-  copyJsToBuild,
   makeCssFromSass,
+  minifyHtml,
   makeMinifiedCssFromSass,
+  minifyJs,
   optimizeImages,
   makeSvgSprite,
   createWebp
@@ -134,7 +140,7 @@ exports.server = server;
 
 const watcher = () => {
   gulpfile.watch("source/sass/**/*.scss", gulpfile.series(makeCssFromSass, copyCssToBuild, makeMinifiedCssFromSass));
-  gulpfile.watch("source/js/**/*.js", gulpfile.series(copyJsToBuild));
+  gulpfile.watch("source/js/**/*.js", gulpfile.series(minifyJs));
   gulpfile.watch("source/*.html", gulpfile.series(copyHtmlToBuild));
   gulpfile.watch("build/**/*.*").on("change", sync.reload);
 }
