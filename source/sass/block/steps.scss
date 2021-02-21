@@ -1,5 +1,6 @@
 .steps {
-  margin-top: 15px;
+  width: 282px;
+  margin: 15px auto 0;
   padding: 13px 20px;
 }
 
@@ -12,6 +13,7 @@
 
 @media (min-width: $tablet-width) {
   .steps {
+    width: 768px;
     margin-top: 34px;
     padding: 13px 30px 50px 30px;
   }
@@ -33,7 +35,7 @@
   }
 
   .steps {
-    margin-top: 20px;
+    margin-top: 16px;
     padding: 56px 110px;
   }
 }

@@ -1,6 +1,7 @@
 .main-nav {
   font-weight: 500;
   font-size: 20px;
+  border-top: 1px solid #e6e6e6;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,6 +15,7 @@
     margin-top: 5px;
     font-size: 18px;
     font-weight: 400;
+    border-top: none;
   }
 }
 

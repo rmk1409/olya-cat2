@@ -1,12 +1,20 @@
 .form-page {
+  min-width: 320px;
+  margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 6px;
 }
 
 .form-page__description {
-  width: 250px;
-  margin: 35px 0 0;
+  width: 274px;
   line-height: 18px;
+  display: block;
+  margin: 35px auto 0;
+}
+
+.form-page__title {
+  margin-right: 20px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +24,7 @@
   }
 
   .form-page__title {
+    text-align: start;
     margin-top: 10px;
     margin-left: 39px;
   }

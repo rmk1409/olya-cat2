@@ -24,6 +24,7 @@
 }
 
 .additional-goods__grid {
+  width: 320px;
   margin-top: 26px;
 }
 
@@ -33,6 +34,7 @@
   }
 
   .additional-goods__grid {
+    width: 768px;
     margin-top: 71px;
   }
 
@@ -64,6 +66,7 @@
     grid-template-columns: 894px 245px;
     gap: 80px;
     margin-top: 80px;
+    padding: 0 23px;
   }
 
   .additional-goods {
@@ -73,15 +76,15 @@
   .additional-goods__title {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 109px;
+    padding: 0 23px;
 
     &::before {
-      right: 1369px;
+      right: 1282px;
       top: 23px;
     }
 
     &::after {
-      left: 482px;
+      left: 395px;
       top: 23px;
     }
   }

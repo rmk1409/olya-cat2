@@ -6,7 +6,7 @@
 }
 
 .development__link {
-  margin-top: 6px;
+  margin-top: 3px;
   fill: $dark-gray;
 
   &:hover {
@@ -40,5 +40,11 @@
 
   .development__title {
     margin-top: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .development {
+    margin-top: 10px;
   }
 }

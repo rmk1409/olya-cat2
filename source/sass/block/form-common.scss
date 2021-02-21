@@ -26,6 +26,10 @@
     margin: 0;
   }
 
+  &:required {
+    border: 1px solid $red-invalid;
+  }
+
   &[type="number"] {
     appearance: textfield;
   }
