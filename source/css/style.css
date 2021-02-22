@@ -1048,7 +1048,8 @@ a {
 @media (min-width: 768px) {
   .main-page {
     padding-top: 31px;
-    padding-bottom: 76px; }
+    padding-bottom: 76px;
+    border-top: none; }
   .main-page__title {
     text-align: start;
     margin-right: 21px; } }

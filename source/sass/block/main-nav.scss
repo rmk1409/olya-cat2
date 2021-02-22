@@ -1,7 +1,7 @@
 .main-nav {
   font-weight: 500;
   font-size: 20px;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $gray-nav;
 }
 
 @media (min-width: $tablet-width) {
