@@ -26,10 +26,6 @@
     margin: 0;
   }
 
-  &:required {
-    border: 1px solid $red-invalid;
-  }
-
   &[type="number"] {
     appearance: textfield;
   }
@@ -43,7 +39,7 @@
   }
 
   &:invalid {
-    border: 2px solid $red-invalid;
+    border: 1px solid $red-invalid;
   }
 
   &::placeholder {
