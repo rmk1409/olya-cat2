@@ -220,6 +220,7 @@ a {
   .main-nav__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 440px; }
   .main-nav {
     margin-top: 5px;
@@ -595,9 +596,9 @@ a {
 .step__description-br {
   display: none; }
 
-.step__one {
+.step--one {
   position: relative; }
-  .step__one::before {
+  .step--one::before {
     position: absolute;
     content: "";
     top: -3px;
@@ -605,7 +606,7 @@ a {
     width: 60px;
     height: 60px;
     background-color: #68b738; }
-  .step__one::after {
+  .step--one::after {
     position: absolute;
     content: "";
     top: 11px;
@@ -615,9 +616,9 @@ a {
     background-image: url("../img/icon_leaf.svg");
     background-repeat: no-repeat; }
 
-.step__two {
+.step--two {
   position: relative; }
-  .step__two::before {
+  .step--two::before {
     position: absolute;
     content: "";
     top: -3px;
@@ -625,7 +626,7 @@ a {
     width: 60px;
     height: 60px;
     background-color: #68b738; }
-  .step__two::after {
+  .step--two::after {
     position: absolute;
     content: "";
     top: 11px;
@@ -635,9 +636,9 @@ a {
     background-image: url("../img/icon_tub.svg");
     background-repeat: no-repeat; }
 
-.step__three {
+.step--three {
   position: relative; }
-  .step__three::before {
+  .step--three::before {
     position: absolute;
     content: "";
     top: -3px;
@@ -645,7 +646,7 @@ a {
     width: 60px;
     height: 60px;
     background-color: #68b738; }
-  .step__three::after {
+  .step--three::after {
     position: absolute;
     content: "";
     top: 11px;
@@ -655,9 +656,9 @@ a {
     background-image: url("../img/icon_eat.svg");
     background-repeat: no-repeat; }
 
-.step__four {
+.step--four {
   position: relative; }
-  .step__four::before {
+  .step--four::before {
     position: absolute;
     content: "";
     top: -3px;
@@ -665,7 +666,7 @@ a {
     width: 60px;
     height: 60px;
     background-color: #68b738; }
-  .step__four::after {
+  .step--four::after {
     position: absolute;
     content: "";
     top: 11px;
@@ -682,89 +683,83 @@ a {
     padding-top: 146px;
     font-size: 16px;
     line-height: 24px; }
-  .step__one::before {
-    top: 33px;
-    left: -1px;
-    width: 80px;
-    height: 80px; }
-  .step__one::after {
-    top: 57px;
-    left: 24px;
-    width: 30px;
-    height: 32px; }
-  .step__one-number {
+    .step--one::before {
+      top: 33px;
+      left: -1px;
+      width: 80px;
+      height: 80px; }
+    .step--one::after {
+      top: 57px;
+      left: 24px;
+      width: 30px;
+      height: 32px; }
+    .step--two::before {
+      top: 33px;
+      left: -1px;
+      width: 80px;
+      height: 80px; }
+    .step--two::after {
+      top: 57px;
+      left: 24px;
+      width: 30px;
+      height: 32px; }
+    .step--three::before {
+      top: 33px;
+      left: -1px;
+      width: 80px;
+      height: 80px; }
+    .step--three::after {
+      top: 57px;
+      left: 28px;
+      width: 30px;
+      height: 32px; }
+    .step--four::before {
+      top: 33px;
+      left: -1px;
+      width: 80px;
+      height: 80px; }
+    .step--four::after {
+      top: 57px;
+      left: 24px;
+      width: 30px;
+      height: 32px; }
+  .step__description {
     position: relative; }
-    .step__one-number::before {
+    .step__description--one::before {
       z-index: -1;
       position: absolute;
       content: "";
-      top: -185px;
+      top: -111px;
       left: 126px;
       width: 112px;
       height: 280px;
       background-image: url("../img/number_1.svg");
       background-repeat: no-repeat; }
-  .step__two::before {
-    top: 33px;
-    left: -1px;
-    width: 80px;
-    height: 80px; }
-  .step__two::after {
-    top: 57px;
-    left: 24px;
-    width: 30px;
-    height: 32px; }
-  .step__two-number {
-    position: relative; }
-    .step__two-number::before {
+    .step__description--two::before {
       z-index: -1;
       position: absolute;
       content: "";
-      top: -187px;
+      top: -111px;
       left: 121px;
       width: 134px;
       height: 280px;
       background-image: url("../img/number_2.svg");
       background-repeat: no-repeat; }
-  .step__three::before {
-    top: 33px;
-    left: -1px;
-    width: 80px;
-    height: 80px; }
-  .step__three::after {
-    top: 57px;
-    left: 28px;
-    width: 30px;
-    height: 32px; }
-  .step__three-number {
-    position: relative; }
-    .step__three-number::before {
+    .step__description--three::before {
       z-index: -1;
       position: absolute;
       content: "";
-      top: -187px;
+      top: -111px;
       left: 123px;
       width: 134px;
       height: 280px;
       background-image: url("../img/number_3.svg");
       background-repeat: no-repeat; }
-  .step__four::before {
-    top: 33px;
-    left: -1px;
-    width: 80px;
-    height: 80px; }
-  .step__four::after {
-    top: 57px;
-    left: 24px;
-    width: 30px;
-    height: 32px; }
-  .step__four-number {
-    position: relative; }
-    .step__four-number::before {
+    .step__description--four::before {
       z-index: -1;
       position: absolute;
       content: "";
-      top: -185px;
+      top: -111px;
       left: 123px;
       width: 136px;
       height: 280px;
@@ -2268,6 +2263,8 @@ a {
         background-image: url("../img/pin-mobile@2x.png"); } }
 
 .footer-map__iframe {
+  width: 100%;
+  height: 359px;
   background-color: #eaeaea; }
 
 .footer-map__pin {
