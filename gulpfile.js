@@ -141,7 +141,7 @@ exports.server = server;
 const watcher = () => {
   gulpfile.watch("source/sass/**/*.scss", gulpfile.series(makeCssFromSass, copyCssToBuild, makeMinifiedCssFromSass));
   gulpfile.watch("source/js/**/*.js", gulpfile.series(minifyJs));
-  gulpfile.watch("source/*.html", gulpfile.series(copyHtmlToBuild));
+  gulpfile.watch("source/*.html", gulpfile.series(minifyHtml));
   gulpfile.watch("build/**/*.*").on("change", sync.reload);
 }
 exports.default = gulpfile.series(build, server, watcher);

@@ -864,7 +864,8 @@ a {
     background-color: #ffffff;
     border: 1px solid #dcdcdc;
     border-radius: 50%;
-    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16)); }
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    cursor: pointer; }
     .result__scale::before {
       position: absolute;
       content: "";
@@ -904,10 +905,10 @@ a {
     grid-row: 1/4;
     margin-top: 0; } }
 
-.stat {
+.stats {
   text-align: center; }
 
-.stat__cost {
+.stats__cost {
   display: flex;
   justify-content: center;
   grid-column-start: 1;
@@ -915,10 +916,10 @@ a {
   margin-top: 33px;
   text-align: center; }
 
-.stat__cost-description {
+.stats__cost-description {
   margin: 0; }
 
-.stat__number {
+.stats__number {
   padding: 12px 11px 11px 10px;
   margin: 0;
   font-size: 24px;
@@ -927,7 +928,7 @@ a {
   border-radius: 4px;
   text-align: center; }
 
-.stat__description {
+.stats__description {
   font-family: "Arial", "Roboto", sans-serif;
   font-size: 12px;
   line-height: 11px;
@@ -938,7 +939,7 @@ a {
   background-color: #eaeaea; }
 
 @media (min-width: 768px) {
-  .stat__cost {
+  .stats__cost {
     flex-direction: column;
     width: 189px;
     margin-top: 1px;
@@ -948,21 +949,21 @@ a {
     text-align: end;
     font-size: 20px;
     line-height: 29px; }
-  .stat__number {
+  .stats__number {
     padding: 21px 11px 20px 10px;
     margin: 0;
     font-size: 30px; }
-  .stat__description {
+  .stats__description {
     font-size: 14px;
     margin: 19px auto -28px;
     background-color: #ffffff; }
-    .stat__description--weight {
+    .stats__description--weight {
       width: 113px; }
-    .stat__description--time {
+    .stats__description--time {
       width: 145px; } }
 
 @media (min-width: 1440px) {
-  .stat__cost {
+  .stats__cost {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -971,7 +972,7 @@ a {
     width: 327px;
     margin-left: 0;
     text-align: start; }
-  .stat__description {
+  .stats__description {
     background-color: #eaeaea; } }
 
 .img-result {
