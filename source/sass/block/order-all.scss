@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 289px;
   margin-top: 39px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -16,7 +15,8 @@
 .order-all__description {
   position: relative;
   width: 160px;
-  padding-top: 173px;
+  padding-top: 172px;
+  padding-bottom: 26px;
   font-family: "Arial", "Roboto", sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -36,17 +36,13 @@
   }
 }
 
-.order-all__br-tablet {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .order-all {
-    height: 200px;
     margin-top: 53px;
-    padding: 58px 0;
+    padding: 58px 54px 25px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
+    background-color: $green;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");

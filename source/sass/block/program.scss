@@ -1,4 +1,6 @@
 .program {
+  width: 282px;
+  margin: 0 auto;
   padding: 29px 20px 18px 20px;
   background-color: $gray;
 }
@@ -103,6 +105,8 @@
 
 @media (min-width: $tablet-width) {
   .program {
+    width: 709px;
+    margin: 0;
     padding: 69px 57px 55px 53px;
   }
 
@@ -171,7 +175,8 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    padding: 66px 57px 55px 53px;
+    width: 573px;
+    padding: 66px 57px 58px 53px;
   }
 
   .program__title {

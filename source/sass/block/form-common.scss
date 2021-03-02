@@ -39,7 +39,7 @@
   }
 
   &:invalid {
-    border: 2px solid $red-invalid;
+    border: 1px solid $red-invalid;
   }
 
   &::placeholder {

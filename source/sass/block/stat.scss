@@ -1,8 +1,8 @@
-.stat {
+.stats {
   text-align: center;
 }
 
-.stat__cost {
+.stats__cost {
   display: flex;
   justify-content: center;
   grid-column-start: 1;
@@ -11,11 +11,11 @@
   text-align: center;
 }
 
-.stat__cost-description {
+.stats__cost-description {
   margin: 0;
 }
 
-.stat__number {
+.stats__number {
   padding: 12px 11px 11px 10px;
   margin: 0;
   font-size: 24px;
@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.stat__description {
+.stats__description {
   font-family: "Arial", "Roboto", sans-serif;
   font-size: 12px;
   line-height: 11px;
@@ -37,7 +37,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .stat__cost {
+  .stats__cost {
     flex-direction: column;
     width: 189px;
     margin-top: 1px;
@@ -49,13 +49,13 @@
     line-height: 29px;
   }
 
-  .stat__number {
+  .stats__number {
     padding: 21px 11px 20px 10px;
     margin: 0;
     font-size: 30px;
   }
 
-  .stat__description {
+  .stats__description {
     font-size: 14px;
     margin: 19px auto -28px;
     background-color: $white;
@@ -71,7 +71,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .stat__cost {
+  .stats__cost {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@
     text-align: start;
   }
 
-  .stat__description {
+  .stats__description {
     background-color: $gray-wrapper;
   }
 }

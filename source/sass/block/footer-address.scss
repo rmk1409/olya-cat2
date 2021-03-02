@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   gap: 16px;
+  width: 282px;
+  margin: 0 auto;
   padding-top: 28px;
   padding-bottom: 26px;
   background-color: $white;
@@ -27,6 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .footer-address {
+    width: 706px;
     padding: 65px 45px 58px 41px;
   }
 
@@ -49,6 +52,7 @@
     z-index: 1;
     position: absolute;
     top: 96px;
+    left: 111px;
     width: 570px;
     padding: 69px 89px 58px 75px;
 

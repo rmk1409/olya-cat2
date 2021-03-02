@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+  flex-wrap: wrap;
   margin-top: 29px;
 }
 
-.form-additional__item {
+.form-additional__product {
   position: relative;
   padding-left: 46px;
   color: $dark-gray;
@@ -52,7 +53,7 @@
     margin-top: 46px;
   }
 
-  .form-additional__item {
+  .form-additional__product {
     padding-left: 59px;
   }
 
@@ -79,7 +80,7 @@
     margin-top: 52px;
   }
 
-  .form-additional__item {
+  .form-additional__product {
     &--water {
       margin-left: 44px;
     }

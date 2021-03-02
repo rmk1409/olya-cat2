@@ -26,6 +26,9 @@
 }
 
 .footer-map__iframe {
+  width: 100%;
+  height: 359px;
+
   background-color: $gray;
 }
 
@@ -73,7 +76,7 @@
 
     &::before {
       top: 33%;
-      left: 61%;
+      left: 63%;
     }
 
     @media (min-resolution: 2dppx) {

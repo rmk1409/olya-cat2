@@ -1,14 +1,15 @@
-.goods {
+.products {
   padding-top: 9px;
   border-top: 1px solid $gray-stroke-result;
 }
 
-.goods__title {
+.products__title {
   font-weight: normal;
+  width: 200px;
   margin: 0;
 }
 
-.goods__info {
+.products__info {
   display: flex;
   justify-content: space-between;
   margin-top: 7px;
@@ -18,16 +19,21 @@
   text-transform: none;
 }
 
-.goods__info-text {
+.products__info-text {
   margin: 0;
+  width: 119px;
+
+  &--cost {
+    text-align: end;
+  }
 }
 
-.goods__button {
+.products__button {
   margin-top: 13px;
 }
 
 @media (min-width: $tablet-width) {
-  .goods {
+  .products {
     display: grid;
     grid-template-columns: 1fr 300px;
     align-items: center;
@@ -35,12 +41,12 @@
     border: 1px solid $gray-stroke-result;
   }
 
-  .goods__title {
+  .products__title {
     font-size: 20px;
     line-height: 20px;
   }
 
-  .goods__button {
+  .products__button {
     grid-row-start: 2;
     grid-column: 1/-1;
     width: 100%;
@@ -49,7 +55,7 @@
     font-size: 16px;
   }
 
-  .goods__info {
+  .products__info {
     justify-content: flex-end;
     width: 222px;
     margin-top: 5px;
@@ -57,13 +63,17 @@
     font-size: 16px;
   }
 
-  .goods__info-text:first-child {
-    margin-right: 51px;
+  .products__info-text:first-child {
+    margin-right: 46px;
+  }
+
+  .products__info-text {
+    width: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .goods {
+  .products {
     display: flex;
     justify-content: normal;
     align-items: baseline;
@@ -72,14 +82,14 @@
     border-top: 1px solid $gray-stroke-result;
   }
 
-  .goods__info {
+  .products__info {
     justify-content: space-between;
     width: 286px;
     margin-left: auto;
     margin-right: 39px;
   }
 
-  .goods__button {
+  .products__button {
     grid-row-start: 2;
     grid-column: 1/-1;
     width: 244px;

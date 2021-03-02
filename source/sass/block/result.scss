@@ -1,5 +1,6 @@
 .result {
-  margin-top: 32px;
+  width: 282px;
+  margin: 32px auto 0;
   padding: 28px 20px 31px;
 }
 
@@ -23,45 +24,6 @@
   line-height: 18px;
 }
 
-.result__button {
-  width: 71px;
-  padding: 0;
-  font-family: "Oswald", "Roboto", sans-serif;
-  font-weight: normal;
-  color: $black;
-  text-transform: uppercase;
-  background-color: transparent;
-  outline: none;
-  border: none;
-
-  &:hover {
-    background-color: transparent;
-  }
-
-  &:active {
-    background-color: transparent;
-    color: $black;
-  }
-}
-
-.result__filter {
-  width: 84px;
-  height: 14px;
-  margin-top: 4px;
-  background-color: white;
-  border: 1px solid $gray-stroke-result;
-  border-radius: 7px;
-}
-
-.result__scale {
-  width: 35px;
-  height: 6px;
-  margin-top: 3px;
-  margin-left: 8px;
-  background-color: $green;
-  border-radius: 2px;
-}
-
 @media (min-width: $tablet-width) {
   .result__description {
     width: 679px;
@@ -71,6 +33,7 @@
   }
 
   .result {
+    width: 768px;
     padding: 65px 31px 70px;
   }
 
@@ -85,61 +48,6 @@
     grid-column-start: -1;
     grid-column-end: -2;
     text-align: end;
-  }
-
-  .result__button {
-    width: 56px;
-    border-bottom: 2px dotted $dark-gray-result;
-
-    &:hover {
-      border-bottom: 2px solid $dark-gray-result;
-    }
-
-    &:active {
-      background-color: transparent;
-      border-bottom: 2px solid transparent;
-    }
-  }
-
-  .result__filter {
-    width: 431px;
-    height: 9px;
-    margin-top: 12px;
-    background-color: $gray-result-filter;
-    border: transparent;
-    border-radius: 7px;
-  }
-
-  .result__scale {
-    position: relative;
-    width: 34px;
-    height: 34px;
-    margin-top: -11px;
-    margin-left: 199px;
-    background-color: $white;
-    border: 1px solid $gray-result-filter;
-    border-radius: 50%;
-    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 12px;
-      left: 12px;
-      width: 8px;
-      height: 8px;
-      background-color: $green;
-      border-radius: 50%;
-    }
-
-    &:hover {
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
-    }
-
-    &:active {
-      border: 1px solid $green;
-      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
-    }
   }
 }
 

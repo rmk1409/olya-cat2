@@ -1,4 +1,4 @@
-.goods-grid {
+.products-grid {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -7,14 +7,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .goods-grid {
+  .products-grid {
     gap: 0;
     border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .goods-grid {
+  .products-grid {
     gap: 0;
     padding-bottom: 1px;
     border-bottom: 1px solid $gray-stroke-result;

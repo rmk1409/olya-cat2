@@ -35,38 +35,38 @@
 }
 
 .form__common {
-  max-width: 320px;
+  width: 320px;
   margin: 28px auto 0;
   padding: 9px 20px;
 }
 
 .form__program {
-  margin: 14px auto 0;
-  padding: 28px 20px 20px;
+  margin: 10px auto 0;
+  padding: 28px 0 20px;
   border-top: 1px solid $gray-stroke;
   border-bottom: 1px solid $gray-stroke;
 }
 
 .form__contact {
-  max-width: 320px;
-  margin: 29px auto 0;
+  width: 320px;
+  margin: 32px auto 0;
   padding: 9px 20px;
 }
 
 .form__comment {
-  max-width: 320px;
+  width: 320px;
   margin: 16px auto 0;
   padding: 9px 20px;
 }
 
 .form__additional {
-  max-width: 320px;
+  width: 320px;
   margin: 8px auto 0;
   padding: 9px 20px;
 }
 
 .form__button-grid {
-  max-width: 320px;
+  width: 320px;
   margin: 9px auto 0;
   padding: 9px 20px;
 }
@@ -132,32 +132,32 @@
   }
 
   .form__common {
-    max-width: 768px;
-    margin-top: 57px;
-    padding: 10px 70px;
+    width: 768px;
+    margin-top: 33px;
+    padding: 33px 70px;
   }
 
   .form__program {
-    max-width: 630px;
-    margin-top: 63px;
+    width: 630px;
+    margin-top: 39px;
     padding: 28px 20px 23px 20px;
     border: 1px solid $gray-stroke;
   }
 
   .form__contact {
-    max-width: 768px;
+    width: 768px;
     margin-top: 79px;
     padding: 10px 68px;
   }
 
   .form__comment {
-    max-width: 768px;
+    width: 768px;
     margin-top: 55px;
     padding: 10px 68px;
   }
 
   .form__additional {
-    max-width: 768px;
+    width: 768px;
     margin-top: 50px;
     padding: 16px 70px;
   }
@@ -165,7 +165,7 @@
   .form__button-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 768px;
+    width: 768px;
     margin: 22px auto 0;
     padding: 10px 71px;
   }
@@ -186,34 +186,36 @@
 
 @media (min-width: $desktop-width) {
   .form__common {
+    width: 570px;
     margin: 0;
     padding: 0;
   }
 
   .form__program {
+    width: 572px;
     margin: 0;
   }
 
   .form__contact {
-    max-width: 1440px;
+    width: 1440px;
     margin-top: 50px;
-    padding: 10px 110px;
+    padding: 10px 111px;
   }
 
   .form__comment {
-    max-width: 1440px;
+    width: 1440px;
     margin-top: 57px;
     padding: 10px 110px;
   }
 
   .form__additional {
-    max-width: 1440px;
+    width: 1440px;
     margin-top: 52px;
     padding: 10px 110px;
   }
 
   .form__button-grid {
-    max-width: 1440px;
+    width: 1440px;
     margin-top: 36px;
     padding: 10px 111px;
   }
