@@ -18,12 +18,12 @@
   border-collapse: collapse;
 }
 
-.card-grid__info-meaning {
+.card-grid__info-value {
   padding-top: 1px;
   text-align: end;
 }
 
-.card-grid__info-definition {
+.card-grid__info-name {
   padding-top: 1px;
   text-align: start;
 }
@@ -55,12 +55,12 @@
     border-bottom: 1px solid $gray-stroke;
   }
 
-  .card-grid__info-meaning {
+  .card-grid__info-value {
     padding-top: 6px;
     padding-bottom: 9px;
   }
 
-  .card-grid__info-definition {
+  .card-grid__info-name {
     padding-top: 6px;
     padding-bottom: 9px;
   }
