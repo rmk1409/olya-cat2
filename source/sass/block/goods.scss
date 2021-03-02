@@ -5,6 +5,7 @@
 
 .goods__title {
   font-weight: normal;
+  width: 200px;
   margin: 0;
 }
 
@@ -20,6 +21,11 @@
 
 .goods__info-text {
   margin: 0;
+  width: 119px;
+
+  &--cost {
+    text-align: end;
+  }
 }
 
 .goods__button {
@@ -59,6 +65,10 @@
 
   .goods__info-text:first-child {
     margin-right: 46px;
+  }
+
+  .goods__info-text {
+    width: auto;
   }
 }
 

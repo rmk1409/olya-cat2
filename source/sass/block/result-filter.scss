@@ -1,0 +1,117 @@
+.result-filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.result-filter__button {
+  width: 71px;
+  padding: 0;
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: normal;
+  color: $black;
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: transparent;
+    color: $black;
+  }
+}
+
+.result-filter__range {
+  width: 84px;
+  height: 14px;
+  margin-top: 4px;
+  background-color: white;
+  border: 1px solid $gray-stroke-result;
+  border-radius: 7px;
+}
+
+.result-filter__slider {
+  width: 35px;
+  height: 6px;
+  margin-top: 3px;
+  margin-left: 8px;
+  background-color: $green;
+  border-radius: 2px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .result-filter {
+    display: flex;
+    justify-content: space-between;
+    width: 579px;
+    margin: 9px auto 0;
+  }
+
+  .result-filter__button {
+    width: 56px;
+    border-bottom: 2px dotted $dark-gray-result;
+
+    &:hover {
+      border-bottom: 2px solid $dark-gray-result;
+    }
+
+    &:active {
+      background-color: transparent;
+      border-bottom: 2px solid transparent;
+    }
+  }
+
+  .result-filter__range {
+    width: 431px;
+    height: 9px;
+    margin-top: 12px;
+    background-color: $gray-result-filter;
+    border: transparent;
+    border-radius: 7px;
+  }
+
+  .result-filter__slider {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    margin-top: -11px;
+    margin-left: 199px;
+    background-color: $white;
+    border: 1px solid $gray-result-filter;
+    border-radius: 50%;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 12px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      border: 1px solid $green;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result-filter {
+    margin-top: 30px;
+    margin-left: 210px;
+  }
+}

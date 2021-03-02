@@ -21,12 +21,6 @@
   object-position: 87% 10%;
 }
 
-.img-result__filter {
-  display: flex;
-  justify-content: center;
-  margin-top: 24px;
-}
-
 @media (min-width: $tablet-width) {
   .img-result__before {
     left: 2px;
@@ -41,13 +35,6 @@
     width: 304px;
     height: 516px;
   }
-
-  .img-result__filter {
-    display: flex;
-    justify-content: space-between;
-    width: 579px;
-    margin: 9px auto 0;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -61,10 +48,5 @@
     width: 269px;
     margin-top: 14px;
     margin-left: 478px;
-  }
-
-  .img-result__filter {
-    margin-top: 30px;
-    margin-left: 210px;
   }
 }

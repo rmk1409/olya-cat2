@@ -30,7 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-goods {
-    padding: 52px 31px 0;
+    padding-top: 52px;
   }
 
   .additional-goods__grid {
@@ -66,25 +66,24 @@
     grid-template-columns: 894px 245px;
     gap: 80px;
     margin-top: 80px;
-    padding: 0 23px;
   }
 
   .additional-goods {
-    padding: 76px 88px 0;
+    padding-top: 76px;
   }
 
   .additional-goods__title {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 23px;
+    padding: 0 23px 0 110px;
 
     &::before {
-      right: 1282px;
+      right: 1368px;
       top: 23px;
     }
 
     &::after {
-      left: 395px;
+      left: 484px;
       top: 23px;
     }
   }
